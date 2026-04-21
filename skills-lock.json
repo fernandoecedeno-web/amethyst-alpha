@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "backtesting-trading-strategies": {
+      "source": "jeremylongshore/claude-code-plugins-plus-skills",
+      "sourceType": "github",
+      "computedHash": "d3d31dfb5a2234936d56f9097f5f5636a0a2469b7a21ce1cfc2909f9cafbf699"
+    },
+    "risk-management": {
+      "source": "0xhubed/agent-trading-arena",
+      "sourceType": "github",
+      "computedHash": "e64e6863b041bf23565ade0cc0d941bc7896be3be02067f0c56a4544809421c5"
+    }
+  }
+}

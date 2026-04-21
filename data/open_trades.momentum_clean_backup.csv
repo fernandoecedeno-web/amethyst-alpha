@@ -1,0 +1,2 @@
+timestamp,ticker,side,crowd_prob,model_prob,ev,position_usd,hours_to_close,family,strike,spot_price,close_time,tier
+2026-04-08T13:51:17.554099,KXETH-26APR0815-B2210,yes,0.8900,0.9020,0.0135,1.23,0.15,KXETH,2210.0,,2026-04-08T19:00:00Z,2

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(kill %1)",
+      "Bash(wait)",
+      "Bash(pkill -f \"python3 main.py\")",
+      "mcp__plugin_claude-mem_mcp-search__get_observations",
+      "Bash(kill 36083)",
+      "Bash(NO_SIDE_HOLD_MULT=2.0 NO_SIDE_SUPPRESS_SOFT_EXITS=true python3 main.py)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(mkdir -p ~/.claude/skills)",
+      "Read(//Users/sahvi/.claude/**)",
+      "Bash(npx skills *)",
+      "Bash(mv ~/.claude/skills/.claude/skills/find-skills ~/.claude/skills/)",
+      "Bash(rm -rf ~/.claude/skills/.claude)",
+      "Bash(mount)"
+    ]
+  }
+}
