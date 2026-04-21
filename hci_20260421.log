@@ -2535,3 +2535,1415 @@
 2026-04-21 13:29:13,573 [INFO] CYCLE #19 done — 0 signal(s)
 2026-04-21 13:29:13,573 [INFO] [DASH_UPDATE] cycle=19 markets=13 signals=0 buys=0
 2026-04-21 13:29:13,574 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:29:23,971 [INFO] FINAL_SPOT | BTC=75413.165 ETH=2304.225
+2026-04-21 13:29:24,998 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:29:25,089 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:29:25,094 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:29:25,094 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:29:28,175 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:29:28,176 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:29:28,176 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:29:28,182 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:29:28,183 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1196
+2026-04-21 13:29:28,183 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1196 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:29:28,183 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.711 fake_edge=False reinforce_eligible=False pnl=-0.0200 held=240
+2026-04-21 13:29:28,184 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:29:28,184 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:29:28,306 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0400 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=13 bad_regime=False[0m
+2026-04-21 13:29:28,306 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2169 min_edge=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.020 volume=- edge=-0.2169 mp=0.391 pressure=0.493 gap=0.2249 threshold=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.1929 min_edge=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.1929 mp=0.274 pressure=0.497 gap=0.2009 threshold=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1308 min_edge=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.040 volume=- edge=-0.1308 mp=0.177 pressure=0.775 gap=0.1388 threshold=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1025 min_edge=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1025 mp=0.106 pressure=0.249 gap=0.1105 threshold=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0613 min_edge=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0613 mp=0.058 pressure=0.784 gap=0.0693 threshold=0.0080[0m
+2026-04-21 13:29:28,306 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3044 spread=0.0200 side=yes mp=0.520 entry=0.210[0m
+2026-04-21 13:29:28,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=no_tradeable_side spread=0.020 volume=- edge=0.3044 mp=0.520 pressure=0.507 gap=0.0100 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:29:28,306 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:29:28,306 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.4536 spread=0.0400 side=yes mp=0.647 entry=0.180[0m
+2026-04-21 13:29:28,306 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.4536 adj_edge=0.3629 spread=0.0400 touch=2000
+2026-04-21 13:29:28,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.040 volume=- edge=0.3629 mp=0.647 pressure=0.509 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:29:28,306 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:29:28,306 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6440 spread=0.0200 side=yes mp=0.760 entry=0.110[0m
+2026-04-21 13:29:28,306 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7681 spread=0.0300 side=yes mp=0.850 entry=0.070[0m
+2026-04-21 13:29:28,306 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7681 adj_edge=0.6145 spread=0.0300 touch=2000
+2026-04-21 13:29:28,307 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.030 entry_price=0.070 assigned=STARTER size_mult=0.50
+2026-04-21 13:29:28,307 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74375 edge=0.8506 spread=0.0400 side=yes mp=0.914 entry=0.050[0m
+2026-04-21 13:29:28,307 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74375 raw_edge=0.8506 adj_edge=0.6805 spread=0.0400 touch=2000
+2026-04-21 13:29:28,307 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=weak_execution_quality spread=0.040 volume=- edge=0.6805 mp=0.914 pressure=0.214 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:28,307 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1409 spread=0.0400 side=no mp=0.403 entry=0.440[0m
+2026-04-21 13:29:28,307 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.1409 adj_edge=0.1127 spread=0.0400 touch=2000
+2026-04-21 13:29:28,307 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.1127 mp=0.403 pressure=0.489 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:29:28,307 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0590 spread=0.0300 side=no mp=0.050 entry=0.880[0m
+2026-04-21 13:29:28,307 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0590 adj_edge=0.0472 spread=0.0300 touch=124
+2026-04-21 13:29:28,307 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.030 volume=- edge=0.0472 mp=0.050 pressure=0.505 detail=reason=weak_execution_quality touch=124[0m
+2026-04-21 13:29:28,307 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6306 spread=0.0500 side=yes mp=0.930 entry=0.280[0m
+2026-04-21 13:29:28,307 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6306 adj_edge=0.5045 spread=0.0500 touch=2000
+2026-04-21 13:29:28,307 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5045 mp=0.930 pressure=0.514 gap=0.0800 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:29:28,307 [INFO] [96mCYCLE #20[0m
+2026-04-21 13:29:28,307 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:29:28,307 [INFO] [96mTOP:[0m
+2026-04-21 13:29:28,307 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.64
+2026-04-21 13:29:28,307 [INFO] 2. KXBTC-26APR2117-B74625-YES e=0.61
+2026-04-21 13:29:28,307 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0200 conviction=elite killer_now=0.711 killer_entry=0.668 spread_now=0.020 spread_entry=0.030 allow=0
+2026-04-21 13:29:28,308 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_negative
+2026-04-21 13:29:28,308 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_negative spread=0.020 volume=- edge=0.6440 mp=0.760 pressure=0.494[0m
+2026-04-21 13:29:28,308 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:29:28,308 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.020 volume=- edge=0.6440 mp=0.760 pressure=0.494[0m
+2026-04-21 13:29:28,308 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_fragile pressure=0.497 spread=0.030 touch=2000[0m
+2026-04-21 13:29:28,308 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=portfolio_full spread=0.030 volume=- edge=0.6145 mp=0.850 pressure=0.497 detail=open_cap current_open=3[0m
+2026-04-21 13:29:28,308 [INFO]   (no signals this cycle)
+2026-04-21 13:29:28,308 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:29:28,308 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=0 buys=0 open=3
+2026-04-21 13:29:28,308 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=4
+2026-04-21 13:29:28,308 [INFO] [96mREJECTION_SUMMARY | edge_floor=5 weak_execution_quality=4 no_tradeable_side=2 already_holding=1 portfolio_full=1 reinforce_pnl_negative=1[0m
+2026-04-21 13:29:28,308 [INFO] [96mNEAR_PASS_1 | ticker=KXBTC-26APR2117-B75375 reason=no_tradeable_side gap=0.0100 spread=0.020 volume=- edge=0.3044 mp=0.520 pressure=0.507 detail=side=yes[0m
+2026-04-21 13:29:28,308 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0693 spread=0.030 volume=- edge=-0.0613 mp=0.058 pressure=0.784[0m
+2026-04-21 13:29:28,308 [INFO] [96mNEAR_PASS_3 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0800 spread=0.050 volume=- edge=0.5045 mp=0.930 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:29:28,434 [INFO] PERF_FAMILY | ?(w=0,l=12,pnl=$+0.00) KXBTC(w=903,l=30633,pnl=red$-3,839.20[0m) KXETH(w=287,l=9141,pnl=red$-3,888.67[0m)
+2026-04-21 13:29:28,446 [INFO] PERF_HOURS  | under_1h(w=1149,l=35895,pnl=red$-7,480.59[0m) 1h_to_24h(w=41,l=3558,pnl=red$-229.60[0m) over_24h(w=0,l=333,pnl=red$-17.68[0m)
+2026-04-21 13:29:28,460 [INFO] PERF_TIER   | T1(w=757,l=21543,pnl=red$-5,600.62[0m,wr=3.4%) T2(w=433,l=18243,pnl=red$-2,127.25[0m,wr=2.3%)
+2026-04-21 13:29:28,468 [INFO] [92mTOP WIN     | KXBTC-26APR1517-B74875 | YES | pnl=green$+5.33[0m | ev=91.35% | hours=0.84[0m
+2026-04-21 13:29:28,468 [INFO] [91mTOP LOSS    | KXBTC-26APR1007-B72350 | YES | pnl=red$-5.00[0m | ev=2.11% | hours=0.25[0m
+2026-04-21 13:29:28,473 [INFO] [96mEARLY       | wins=67 losses=2674 pnl=red$-197.74[0m[0m
+2026-04-21 13:29:28,479 [INFO] [96mFRESH_HFT   | resolved=0  early_wins=0  early_losses=0  expiry=0  early_pnl=$+0.00  win_rate=0.0%[0m
+2026-04-21 13:29:28,479 [INFO] [96mHFT_STATS   | trades=0  wins=0  losses=0  wr=0.0%  avg_hold=0.0s  avg_win=$+0.000  avg_loss=$+0.000[0m
+2026-04-21 13:29:28,485 [INFO] SKIPS | far_strike=99  price=2  edge_gate=5  entry_score=4
+2026-04-21 13:29:28,485 [INFO] CYCLE #20 done — 0 signal(s)
+2026-04-21 13:29:28,486 [INFO] [DASH_UPDATE] cycle=20 markets=13 signals=0 buys=0
+2026-04-21 13:29:28,486 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:29:38,954 [INFO] FINAL_SPOT | BTC=75414.77 ETH=2304.5
+2026-04-21 13:29:39,490 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:29:39,611 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:29:39,616 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:29:39,617 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:29:41,788 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:29:41,789 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:29:41,789 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:29:41,794 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:29:41,795 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1209
+2026-04-21 13:29:41,795 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1209 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:29:41,795 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.681 fake_edge=False reinforce_eligible=False pnl=-0.0200 held=254
+2026-04-21 13:29:41,796 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:29:41,796 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:29:41,931 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0400 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=13 bad_regime=False[0m
+2026-04-21 13:29:41,931 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2234 min_edge=0.0080[0m
+2026-04-21 13:29:41,931 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2234 mp=0.392 pressure=0.495 gap=0.2314 threshold=0.0080[0m
+2026-04-21 13:29:41,931 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.1777 min_edge=0.0080[0m
+2026-04-21 13:29:41,931 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.040 volume=- edge=-0.1777 mp=0.274 pressure=0.497 gap=0.1857 threshold=0.0080[0m
+2026-04-21 13:29:41,932 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1346 min_edge=0.0080[0m
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.040 volume=- edge=-0.1346 mp=0.178 pressure=0.509 gap=0.1426 threshold=0.0080[0m
+2026-04-21 13:29:41,932 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.0869 min_edge=0.0080[0m
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.030 volume=- edge=-0.0869 mp=0.106 pressure=0.507 gap=0.0949 threshold=0.0080[0m
+2026-04-21 13:29:41,932 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0614 min_edge=0.0080[0m
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0614 mp=0.058 pressure=0.784 gap=0.0694 threshold=0.0080[0m
+2026-04-21 13:29:41,932 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.2992 spread=0.0300 side=yes mp=0.521 entry=0.210[0m
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.030 volume=- edge=0.2992 mp=0.521 pressure=0.508 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:29:41,932 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:29:41,932 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.4487 spread=0.0500 side=yes mp=0.648 entry=0.180[0m
+2026-04-21 13:29:41,932 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.4487 adj_edge=0.3590 spread=0.0500 touch=2000
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.050 volume=- edge=0.3590 mp=0.648 pressure=0.509 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:41,932 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:29:41,932 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6290 spread=0.0300 side=yes mp=0.761 entry=0.120[0m
+2026-04-21 13:29:41,932 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7688 spread=0.0300 side=yes mp=0.850 entry=0.070[0m
+2026-04-21 13:29:41,932 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7688 adj_edge=0.6150 spread=0.0300 touch=2000
+2026-04-21 13:29:41,932 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.030 entry_price=0.070 assigned=STARTER size_mult=0.50
+2026-04-21 13:29:41,932 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74375 edge=0.8511 spread=0.0400 side=yes mp=0.914 entry=0.050[0m
+2026-04-21 13:29:41,932 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74375 raw_edge=0.8511 adj_edge=0.6809 spread=0.0400 touch=2000
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=weak_execution_quality spread=0.040 volume=- edge=0.6809 mp=0.914 pressure=0.214 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:41,932 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1336 spread=0.0500 side=no mp=0.407 entry=0.440[0m
+2026-04-21 13:29:41,932 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.1336 adj_edge=0.1069 spread=0.0500 touch=2000
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.050 volume=- edge=0.1069 mp=0.407 pressure=0.489 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:41,932 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0667 spread=0.0400 side=no mp=0.050 entry=0.870[0m
+2026-04-21 13:29:41,932 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0667 adj_edge=0.0534 spread=0.0400 touch=2000
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0534 mp=0.050 pressure=0.505 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:41,932 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6423 spread=0.0500 side=yes mp=0.931 entry=0.270[0m
+2026-04-21 13:29:41,932 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6423 adj_edge=0.5138 spread=0.0500 touch=2000
+2026-04-21 13:29:41,932 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5138 mp=0.931 pressure=0.514 gap=0.0700 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:29:41,933 [INFO] [96mCYCLE #21[0m
+2026-04-21 13:29:41,933 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:29:41,933 [INFO] [96mTOP:[0m
+2026-04-21 13:29:41,933 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.63
+2026-04-21 13:29:41,933 [INFO] 2. KXBTC-26APR2117-B74625-YES e=0.61
+2026-04-21 13:29:41,933 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0200 conviction=elite killer_now=0.681 killer_entry=0.668 spread_now=0.030 spread_entry=0.030 allow=0
+2026-04-21 13:29:41,933 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_not_improving
+2026-04-21 13:29:41,933 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_not_improving spread=0.030 volume=- edge=0.6290 mp=0.761 pressure=0.495[0m
+2026-04-21 13:29:41,933 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:29:41,933 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.030 volume=- edge=0.6290 mp=0.761 pressure=0.495[0m
+2026-04-21 13:29:41,933 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_fragile pressure=0.496 spread=0.030 touch=2000[0m
+2026-04-21 13:29:41,933 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=portfolio_full spread=0.030 volume=- edge=0.6150 mp=0.850 pressure=0.496 detail=open_cap current_open=3[0m
+2026-04-21 13:29:41,933 [INFO]   (no signals this cycle)
+2026-04-21 13:29:41,933 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:29:41,933 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=0 buys=0 open=3
+2026-04-21 13:29:41,933 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=5
+2026-04-21 13:29:41,933 [INFO] [96mREJECTION_SUMMARY | edge_floor=5 weak_execution_quality=5 already_holding=1 no_tradeable_side=1 portfolio_full=1 reinforce_pnl_not_improving=1[0m
+2026-04-21 13:29:41,933 [INFO] [96mNEAR_PASS_1 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0694 spread=0.030 volume=- edge=-0.0614 mp=0.058 pressure=0.784[0m
+2026-04-21 13:29:41,933 [INFO] [96mNEAR_PASS_2 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0700 spread=0.050 volume=- edge=0.5138 mp=0.931 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:29:41,933 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.0949 spread=0.030 volume=- edge=-0.0869 mp=0.106 pressure=0.507[0m
+2026-04-21 13:29:41,933 [INFO] SKIPS | far_strike=99  price=1  edge_gate=5  entry_score=5
+2026-04-21 13:29:41,934 [INFO] CYCLE #21 done — 0 signal(s)
+2026-04-21 13:29:41,934 [INFO] [DASH_UPDATE] cycle=21 markets=13 signals=0 buys=0
+2026-04-21 13:29:41,934 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:29:52,731 [INFO] FINAL_SPOT | BTC=75488.485 ETH=2304.72
+2026-04-21 13:29:53,295 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:29:53,420 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:29:53,424 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:29:53,425 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:29:55,587 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:29:55,587 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:29:55,587 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:29:55,593 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:29:55,594 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1223
+2026-04-21 13:29:55,594 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1223 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:29:55,595 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.715 fake_edge=False reinforce_eligible=False pnl=-0.0300 held=268
+2026-04-21 13:29:55,595 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:29:55,595 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:29:55,730 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0400 real_book=13 touch50=12 touch10=12 spread<=0.05=12 spread<=0.08=13 bad_regime=False[0m
+2026-04-21 13:29:55,730 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=bad_liquidity spread=0.030 volume=- edge=-0.2643 mp=0.429 pressure=0.495 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:29:55,730 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2005 min_edge=0.0080[0m
+2026-04-21 13:29:55,730 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.040 volume=- edge=-0.2005 mp=0.307 pressure=0.497 gap=0.2085 threshold=0.0080[0m
+2026-04-21 13:29:55,731 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1448 min_edge=0.0080[0m
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.030 volume=- edge=-0.1448 mp=0.204 pressure=0.509 gap=0.1528 threshold=0.0080[0m
+2026-04-21 13:29:55,731 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1054 min_edge=0.0080[0m
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.030 volume=- edge=-0.1054 mp=0.125 pressure=0.507 gap=0.1134 threshold=0.0080[0m
+2026-04-21 13:29:55,731 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0734 min_edge=0.0080[0m
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0734 mp=0.070 pressure=0.784 gap=0.0814 threshold=0.0080[0m
+2026-04-21 13:29:55,731 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3318 spread=0.0400 side=yes mp=0.559 entry=0.210[0m
+2026-04-21 13:29:55,731 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3318 adj_edge=0.2654 spread=0.0400 touch=2000
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.040 volume=- edge=0.2654 mp=0.559 pressure=0.507 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:29:55,731 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:29:55,731 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.4839 spread=0.0500 side=yes mp=0.683 entry=0.180[0m
+2026-04-21 13:29:55,731 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.4839 adj_edge=0.3871 spread=0.0500 touch=2000
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.050 volume=- edge=0.3871 mp=0.683 pressure=0.509 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:55,731 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:29:55,731 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6839 spread=0.0200 side=yes mp=0.790 entry=0.100[0m
+2026-04-21 13:29:55,731 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7845 spread=0.0400 side=yes mp=0.872 entry=0.070[0m
+2026-04-21 13:29:55,731 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7845 adj_edge=0.6276 spread=0.0400 touch=2000
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6276 mp=0.872 pressure=0.496 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:55,731 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74375 edge=0.8653 spread=0.0400 side=yes mp=0.929 entry=0.050[0m
+2026-04-21 13:29:55,731 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74375 raw_edge=0.8653 adj_edge=0.6922 spread=0.0400 touch=2000
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=weak_execution_quality spread=0.040 volume=- edge=0.6922 mp=0.929 pressure=0.214 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:55,731 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1300 spread=0.0500 side=no mp=0.411 entry=0.440[0m
+2026-04-21 13:29:55,731 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.1300 adj_edge=0.1040 spread=0.0500 touch=2000
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.050 volume=- edge=0.1040 mp=0.411 pressure=0.489 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:55,731 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0767 spread=0.0400 side=no mp=0.050 entry=0.860[0m
+2026-04-21 13:29:55,731 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0767 adj_edge=0.0614 spread=0.0400 touch=2000
+2026-04-21 13:29:55,731 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0614 mp=0.050 pressure=0.505 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:29:55,731 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6537 spread=0.0500 side=yes mp=0.933 entry=0.260[0m
+2026-04-21 13:29:55,731 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6537 adj_edge=0.5230 spread=0.0500 touch=2000
+2026-04-21 13:29:55,732 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5230 mp=0.933 pressure=0.514 gap=0.0600 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:29:55,732 [INFO] [96mCYCLE #22[0m
+2026-04-21 13:29:55,732 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:29:55,732 [INFO] [96mTOP:[0m
+2026-04-21 13:29:55,732 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.68
+2026-04-21 13:29:55,732 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0300 conviction=elite killer_now=0.715 killer_entry=0.668 spread_now=0.020 spread_entry=0.030 allow=0
+2026-04-21 13:29:55,732 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_negative
+2026-04-21 13:29:55,732 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_negative spread=0.020 volume=- edge=0.6839 mp=0.790 pressure=0.494[0m
+2026-04-21 13:29:55,732 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:29:55,732 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.020 volume=- edge=0.6839 mp=0.790 pressure=0.494[0m
+2026-04-21 13:29:55,732 [INFO]   (no signals this cycle)
+2026-04-21 13:29:55,732 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:29:55,732 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=1 attempts=0 buys=0 open=3
+2026-04-21 13:29:55,732 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=1 score=6
+2026-04-21 13:29:55,732 [INFO] [96mREJECTION_SUMMARY | weak_execution_quality=6 edge_floor=4 already_holding=1 bad_liquidity=1 no_tradeable_side=1 reinforce_pnl_negative=1[0m
+2026-04-21 13:29:55,732 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0600 spread=0.050 volume=- edge=0.5230 mp=0.933 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:29:55,732 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0814 spread=0.030 volume=- edge=-0.0734 mp=0.070 pressure=0.784[0m
+2026-04-21 13:29:55,732 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1134 spread=0.030 volume=- edge=-0.1054 mp=0.125 pressure=0.507[0m
+2026-04-21 13:29:55,733 [INFO] SKIPS | far_strike=99  no_liquidity=1  price=1  edge_gate=4  entry_score=6
+2026-04-21 13:29:55,733 [INFO] CYCLE #22 done — 0 signal(s)
+2026-04-21 13:29:55,733 [INFO] [DASH_UPDATE] cycle=22 markets=13 signals=0 buys=0
+2026-04-21 13:29:55,733 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:30:06,045 [INFO] FINAL_SPOT | BTC=75488.01 ETH=2305.825
+2026-04-21 13:30:06,624 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:30:06,779 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:30:06,780 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:30:06,780 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:30:08,891 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:30:08,892 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:30:08,892 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:30:08,897 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:30:08,901 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1236
+2026-04-21 13:30:08,901 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1236 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:30:08,901 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.689 fake_edge=False reinforce_eligible=False pnl=-0.0400 held=281
+2026-04-21 13:30:08,902 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:30:08,902 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:30:09,028 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0400 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=13 bad_regime=False[0m
+2026-04-21 13:30:09,028 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=bad_liquidity spread=0.030 volume=- edge=-0.2640 mp=0.429 pressure=0.495 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:30:09,029 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2002 min_edge=0.0080[0m
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.040 volume=- edge=-0.2002 mp=0.307 pressure=0.497 gap=0.2082 threshold=0.0080[0m
+2026-04-21 13:30:09,029 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1467 min_edge=0.0080[0m
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.040 volume=- edge=-0.1467 mp=0.203 pressure=0.509 gap=0.1547 threshold=0.0080[0m
+2026-04-21 13:30:09,029 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1135 min_edge=0.0080[0m
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.050 volume=- edge=-0.1135 mp=0.124 pressure=0.788 gap=0.1215 threshold=0.0080[0m
+2026-04-21 13:30:09,029 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0731 min_edge=0.0080[0m
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0731 mp=0.070 pressure=0.784 gap=0.0811 threshold=0.0080[0m
+2026-04-21 13:30:09,029 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3297 spread=0.0500 side=yes mp=0.559 entry=0.210[0m
+2026-04-21 13:30:09,029 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3297 adj_edge=0.2638 spread=0.0500 touch=2000
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.2638 mp=0.559 pressure=0.508 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:09,029 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:30:09,029 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.4938 spread=0.0500 side=yes mp=0.683 entry=0.170[0m
+2026-04-21 13:30:09,029 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.4938 adj_edge=0.3950 spread=0.0500 touch=2000
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.050 volume=- edge=0.3950 mp=0.683 pressure=0.509 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:09,029 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:30:09,029 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6780 spread=0.0300 side=yes mp=0.790 entry=0.100[0m
+2026-04-21 13:30:09,029 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7845 spread=0.0400 side=yes mp=0.872 entry=0.070[0m
+2026-04-21 13:30:09,029 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7845 adj_edge=0.6276 spread=0.0400 touch=2000
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6276 mp=0.872 pressure=0.496 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:09,029 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74375 edge=0.8654 spread=0.0400 side=yes mp=0.929 entry=0.050[0m
+2026-04-21 13:30:09,029 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74375 raw_edge=0.8654 adj_edge=0.6923 spread=0.0400 touch=2000
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=weak_execution_quality spread=0.040 volume=- edge=0.6923 mp=0.929 pressure=0.214 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:09,029 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1116 spread=0.0500 side=no mp=0.429 entry=0.440[0m
+2026-04-21 13:30:09,029 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.1116 adj_edge=0.0893 spread=0.0500 touch=2000
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.050 volume=- edge=0.0893 mp=0.429 pressure=0.489 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:09,029 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0717 spread=0.0400 side=no mp=0.050 entry=0.860[0m
+2026-04-21 13:30:09,029 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0717 adj_edge=0.0574 spread=0.0400 touch=78
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0574 mp=0.050 pressure=0.504 detail=reason=elevated_spread_exec touch=78[0m
+2026-04-21 13:30:09,029 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6698 spread=0.0500 side=yes mp=0.939 entry=0.250[0m
+2026-04-21 13:30:09,029 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6698 adj_edge=0.5358 spread=0.0500 touch=2000
+2026-04-21 13:30:09,029 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5358 mp=0.939 pressure=0.514 gap=0.0500 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:30:09,030 [INFO] [96mCYCLE #23[0m
+2026-04-21 13:30:09,030 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:30:09,030 [INFO] [96mTOP:[0m
+2026-04-21 13:30:09,030 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.68
+2026-04-21 13:30:09,030 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0400 conviction=elite killer_now=0.689 killer_entry=0.668 spread_now=0.030 spread_entry=0.030 allow=0
+2026-04-21 13:30:09,030 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_not_improving
+2026-04-21 13:30:09,030 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_not_improving spread=0.030 volume=- edge=0.6780 mp=0.790 pressure=0.502[0m
+2026-04-21 13:30:09,030 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:30:09,030 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.030 volume=- edge=0.6780 mp=0.790 pressure=0.502[0m
+2026-04-21 13:30:09,030 [INFO]   (no signals this cycle)
+2026-04-21 13:30:09,030 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:30:09,030 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=1 attempts=0 buys=0 open=3
+2026-04-21 13:30:09,030 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=1 score=6
+2026-04-21 13:30:09,030 [INFO] [96mREJECTION_SUMMARY | weak_execution_quality=6 edge_floor=4 already_holding=1 bad_liquidity=1 no_tradeable_side=1 reinforce_pnl_not_improving=1[0m
+2026-04-21 13:30:09,030 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0500 spread=0.050 volume=- edge=0.5358 mp=0.939 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:30:09,030 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0811 spread=0.030 volume=- edge=-0.0731 mp=0.070 pressure=0.784[0m
+2026-04-21 13:30:09,030 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1215 spread=0.050 volume=- edge=-0.1135 mp=0.124 pressure=0.788[0m
+2026-04-21 13:30:09,031 [INFO] SKIPS | far_strike=99  no_liquidity=1  price=1  edge_gate=4  entry_score=6
+2026-04-21 13:30:09,031 [INFO] CYCLE #23 done — 0 signal(s)
+2026-04-21 13:30:09,031 [INFO] [DASH_UPDATE] cycle=23 markets=13 signals=0 buys=0
+2026-04-21 13:30:09,031 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:30:19,377 [INFO] FINAL_SPOT | BTC=75502.025 ETH=2306.525
+2026-04-21 13:30:19,959 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:30:20,045 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:30:20,049 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:30:20,049 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:30:22,170 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:30:22,171 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:30:22,171 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:30:22,179 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:30:22,180 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1250
+2026-04-21 13:30:22,180 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1250 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:30:22,180 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.689 fake_edge=False reinforce_eligible=False pnl=-0.0400 held=294
+2026-04-21 13:30:22,181 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:30:22,181 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:30:22,305 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=11 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:30:22,305 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=bad_liquidity spread=0.030 volume=- edge=-0.2711 mp=0.436 pressure=0.495 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:30:22,305 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2065 min_edge=0.0080[0m
+2026-04-21 13:30:22,305 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.040 volume=- edge=-0.2065 mp=0.313 pressure=0.497 gap=0.2145 threshold=0.0080[0m
+2026-04-21 13:30:22,305 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=bad_liquidity spread=0.040 volume=- edge=-0.1585 mp=0.208 pressure=0.509 gap=7.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:30:22,305 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1014 min_edge=0.0080[0m
+2026-04-21 13:30:22,305 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1014 mp=0.128 pressure=0.508 gap=0.1094 threshold=0.0080[0m
+2026-04-21 13:30:22,305 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0755 min_edge=0.0080[0m
+2026-04-21 13:30:22,305 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0755 mp=0.072 pressure=0.784 gap=0.0835 threshold=0.0080[0m
+2026-04-21 13:30:22,305 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3370 spread=0.0500 side=yes mp=0.566 entry=0.210[0m
+2026-04-21 13:30:22,305 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3370 adj_edge=0.2696 spread=0.0500 touch=2000
+2026-04-21 13:30:22,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.2696 mp=0.566 pressure=0.508 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:22,306 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:30:22,306 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5004 spread=0.0500 side=yes mp=0.690 entry=0.170[0m
+2026-04-21 13:30:22,306 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5004 adj_edge=0.4003 spread=0.0500 touch=2000
+2026-04-21 13:30:22,306 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.050 volume=- edge=0.4003 mp=0.690 pressure=0.502 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:22,306 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:30:22,306 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6835 spread=0.0300 side=yes mp=0.795 entry=0.100[0m
+2026-04-21 13:30:22,307 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7885 spread=0.0400 side=yes mp=0.876 entry=0.070[0m
+2026-04-21 13:30:22,307 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7885 adj_edge=0.6308 spread=0.0400 touch=2000
+2026-04-21 13:30:22,307 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6308 mp=0.876 pressure=0.496 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:22,307 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:30:22,307 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.931 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:30:22,307 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0998 spread=0.0500 side=no mp=0.441 entry=0.440[0m
+2026-04-21 13:30:22,307 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0998 adj_edge=0.0798 spread=0.0500 touch=2000
+2026-04-21 13:30:22,307 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.050 volume=- edge=0.0798 mp=0.441 pressure=0.489 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:22,308 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0875 spread=0.0300 side=no mp=0.050 entry=0.850[0m
+2026-04-21 13:30:22,308 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0875 adj_edge=0.0700 spread=0.0300 touch=78
+2026-04-21 13:30:22,308 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.030 volume=- edge=0.0700 mp=0.050 pressure=0.504 detail=reason=weak_execution_quality touch=78[0m
+2026-04-21 13:30:22,308 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6835 spread=0.0500 side=yes mp=0.943 entry=0.240[0m
+2026-04-21 13:30:22,308 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6835 adj_edge=0.5468 spread=0.0500 touch=2000
+2026-04-21 13:30:22,308 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5468 mp=0.943 pressure=0.514 gap=0.0400 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:30:22,308 [INFO] [96mCYCLE #24[0m
+2026-04-21 13:30:22,308 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:30:22,308 [INFO] [96mTOP:[0m
+2026-04-21 13:30:22,308 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.68
+2026-04-21 13:30:22,308 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0400 conviction=elite killer_now=0.689 killer_entry=0.668 spread_now=0.030 spread_entry=0.030 allow=0
+2026-04-21 13:30:22,308 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_not_improving
+2026-04-21 13:30:22,308 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_not_improving spread=0.030 volume=- edge=0.6835 mp=0.795 pressure=0.495[0m
+2026-04-21 13:30:22,308 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:30:22,308 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.030 volume=- edge=0.6835 mp=0.795 pressure=0.495[0m
+2026-04-21 13:30:22,308 [INFO]   (no signals this cycle)
+2026-04-21 13:30:22,308 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:30:22,308 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=1 attempts=0 buys=0 open=3
+2026-04-21 13:30:22,308 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=2 score=5
+2026-04-21 13:30:22,308 [INFO] [96mREJECTION_SUMMARY | weak_execution_quality=5 edge_floor=3 bad_liquidity=2 already_holding=1 low_edge=1 no_tradeable_side=1 reinforce_pnl_not_improving=1[0m
+2026-04-21 13:30:22,308 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0400 spread=0.050 volume=- edge=0.5468 mp=0.943 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:30:22,309 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0835 spread=0.030 volume=- edge=-0.0755 mp=0.072 pressure=0.784[0m
+2026-04-21 13:30:22,309 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1094 spread=0.040 volume=- edge=-0.1014 mp=0.128 pressure=0.508[0m
+2026-04-21 13:30:22,309 [INFO] SKIPS | far_strike=99  no_liquidity=2  price=1  edge_gate=4  entry_score=5
+2026-04-21 13:30:22,309 [INFO] CYCLE #24 done — 0 signal(s)
+2026-04-21 13:30:22,309 [INFO] [DASH_UPDATE] cycle=24 markets=13 signals=0 buys=0
+2026-04-21 13:30:22,309 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:30:32,698 [INFO] FINAL_SPOT | BTC=75503.345 ETH=2306.785
+2026-04-21 13:30:33,236 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:30:33,337 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:30:33,340 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:30:33,340 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:30:35,632 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:30:35,632 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:30:35,632 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:30:35,635 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:30:35,636 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1263
+2026-04-21 13:30:35,636 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1263 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:30:35,636 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.689 fake_edge=False reinforce_eligible=False pnl=-0.0400 held=308
+2026-04-21 13:30:35,636 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:30:35,636 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:30:35,758 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=11 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:30:35,758 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=bad_liquidity spread=0.030 volume=- edge=-0.2718 mp=0.437 pressure=0.495 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:30:35,758 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=bad_liquidity spread=0.030 volume=- edge=-0.1987 mp=0.314 pressure=0.497 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:30:35,758 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1421 min_edge=0.0080[0m
+2026-04-21 13:30:35,758 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.040 volume=- edge=-0.1421 mp=0.209 pressure=0.509 gap=0.1501 threshold=0.0080[0m
+2026-04-21 13:30:35,758 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.0991 min_edge=0.0080[0m
+2026-04-21 13:30:35,758 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.030 volume=- edge=-0.0991 mp=0.128 pressure=0.506 gap=0.1071 threshold=0.0080[0m
+2026-04-21 13:30:35,758 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0756 min_edge=0.0080[0m
+2026-04-21 13:30:35,758 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0756 mp=0.072 pressure=0.784 gap=0.0836 threshold=0.0080[0m
+2026-04-21 13:30:35,758 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3377 spread=0.0500 side=yes mp=0.567 entry=0.210[0m
+2026-04-21 13:30:35,758 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3377 adj_edge=0.2702 spread=0.0500 touch=2000
+2026-04-21 13:30:35,758 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.2702 mp=0.567 pressure=0.508 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:35,758 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:30:35,758 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5012 spread=0.0500 side=yes mp=0.690 entry=0.170[0m
+2026-04-21 13:30:35,758 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5012 adj_edge=0.4010 spread=0.0500 touch=2000
+2026-04-21 13:30:35,758 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.050 volume=- edge=0.4010 mp=0.690 pressure=0.502 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:35,758 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:30:35,758 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6841 spread=0.0300 side=yes mp=0.796 entry=0.100[0m
+2026-04-21 13:30:35,759 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7872 spread=0.0500 side=yes mp=0.876 entry=0.070[0m
+2026-04-21 13:30:35,759 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7872 adj_edge=0.6298 spread=0.0500 touch=2216
+2026-04-21 13:30:35,759 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.050 volume=- edge=0.6298 mp=0.876 pressure=0.495 detail=reason=elevated_spread_exec touch=2216[0m
+2026-04-21 13:30:35,759 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:30:35,759 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.932 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:30:35,759 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1182 spread=0.0400 side=no mp=0.445 entry=0.420[0m
+2026-04-21 13:30:35,759 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.1182 adj_edge=0.0946 spread=0.0400 touch=2000
+2026-04-21 13:30:35,759 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0946 mp=0.445 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:30:35,759 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0809 spread=0.0500 side=no mp=0.050 entry=0.850[0m
+2026-04-21 13:30:35,759 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0809 adj_edge=0.0647 spread=0.0500 touch=2000
+2026-04-21 13:30:35,759 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.050 volume=- edge=0.0647 mp=0.050 pressure=0.505 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:35,759 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6849 spread=0.0500 side=yes mp=0.944 entry=0.240[0m
+2026-04-21 13:30:35,759 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6849 adj_edge=0.5479 spread=0.0500 touch=2000
+2026-04-21 13:30:35,759 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5479 mp=0.944 pressure=0.514 gap=0.0400 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:30:35,759 [INFO] [96mCYCLE #25[0m
+2026-04-21 13:30:35,759 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:30:35,759 [INFO] [96mTOP:[0m
+2026-04-21 13:30:35,759 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.68
+2026-04-21 13:30:35,759 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0400 conviction=elite killer_now=0.689 killer_entry=0.668 spread_now=0.030 spread_entry=0.030 allow=0
+2026-04-21 13:30:35,759 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_not_improving
+2026-04-21 13:30:35,759 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_not_improving spread=0.030 volume=- edge=0.6841 mp=0.796 pressure=0.495[0m
+2026-04-21 13:30:35,759 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:30:35,759 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.030 volume=- edge=0.6841 mp=0.796 pressure=0.495[0m
+2026-04-21 13:30:35,759 [INFO]   (no signals this cycle)
+2026-04-21 13:30:35,759 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:30:35,759 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=1 attempts=0 buys=0 open=3
+2026-04-21 13:30:35,759 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=2 score=5
+2026-04-21 13:30:35,760 [INFO] [96mREJECTION_SUMMARY | weak_execution_quality=5 edge_floor=3 bad_liquidity=2 already_holding=1 low_edge=1 no_tradeable_side=1 reinforce_pnl_not_improving=1[0m
+2026-04-21 13:30:35,760 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0400 spread=0.050 volume=- edge=0.5479 mp=0.944 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:30:35,760 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0836 spread=0.030 volume=- edge=-0.0756 mp=0.072 pressure=0.784[0m
+2026-04-21 13:30:35,760 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1071 spread=0.030 volume=- edge=-0.0991 mp=0.128 pressure=0.506[0m
+2026-04-21 13:30:35,760 [INFO] SKIPS | far_strike=99  no_liquidity=2  price=1  edge_gate=4  entry_score=5
+2026-04-21 13:30:35,760 [INFO] CYCLE #25 done — 0 signal(s)
+2026-04-21 13:30:35,760 [INFO] [DASH_UPDATE] cycle=25 markets=13 signals=0 buys=0
+2026-04-21 13:30:35,760 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:30:46,174 [INFO] FINAL_SPOT | BTC=75525.985 ETH=2307.475
+2026-04-21 13:30:46,688 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:30:46,789 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:30:46,793 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:30:46,793 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:30:49,070 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:30:49,071 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:30:49,071 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:30:49,079 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:30:49,080 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1276
+2026-04-21 13:30:49,080 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1276 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:30:49,080 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.715 fake_edge=False reinforce_eligible=False pnl=-0.0300 held=321
+2026-04-21 13:30:49,081 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:30:49,081 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:30:49,215 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=13 bad_regime=False[0m
+2026-04-21 13:30:49,215 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=bad_liquidity spread=0.030 volume=- edge=-0.2834 mp=0.448 pressure=0.495 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:30:49,215 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=bad_liquidity spread=0.040 volume=- edge=-0.2242 mp=0.324 pressure=0.497 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:30:49,215 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1663 min_edge=0.0080[0m
+2026-04-21 13:30:49,215 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.050 volume=- edge=-0.1663 mp=0.217 pressure=0.509 gap=0.1743 threshold=0.0080[0m
+2026-04-21 13:30:49,216 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1210 min_edge=0.0080[0m
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1210 mp=0.134 pressure=0.506 gap=0.1290 threshold=0.0080[0m
+2026-04-21 13:30:49,216 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0796 min_edge=0.0080[0m
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0796 mp=0.076 pressure=0.784 gap=0.0876 threshold=0.0080[0m
+2026-04-21 13:30:49,216 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3552 spread=0.0400 side=yes mp=0.578 entry=0.210[0m
+2026-04-21 13:30:49,216 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3552 adj_edge=0.2842 spread=0.0400 touch=2000
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.040 volume=- edge=0.2842 mp=0.578 pressure=0.508 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:30:49,216 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:30:49,216 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5117 spread=0.0500 side=yes mp=0.701 entry=0.170[0m
+2026-04-21 13:30:49,216 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5117 adj_edge=0.4094 spread=0.0500 touch=2000
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.050 volume=- edge=0.4094 mp=0.701 pressure=0.502 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:49,216 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:30:49,216 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6984 spread=0.0200 side=yes mp=0.804 entry=0.100[0m
+2026-04-21 13:30:49,216 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7989 spread=0.0400 side=yes mp=0.882 entry=0.070[0m
+2026-04-21 13:30:49,216 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7989 adj_edge=0.6391 spread=0.0400 touch=2000
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6391 mp=0.882 pressure=0.495 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:49,216 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74375 edge=0.8723 spread=0.0400 side=yes mp=0.936 entry=0.050[0m
+2026-04-21 13:30:49,216 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74375 raw_edge=0.8723 adj_edge=0.6978 spread=0.0400 touch=2000
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=weak_execution_quality spread=0.040 volume=- edge=0.6978 mp=0.936 pressure=0.214 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:49,216 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1123 spread=0.0300 side=no mp=0.457 entry=0.420[0m
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=killer_killer_score spread=0.030 volume=- edge=0.1123 mp=0.457 pressure=0.490 gap=0.0781 threshold=0.5400[0m
+2026-04-21 13:30:49,216 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0709 spread=0.0500 side=no mp=0.050 entry=0.860[0m
+2026-04-21 13:30:49,216 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0709 adj_edge=0.0567 spread=0.0500 touch=2000
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.050 volume=- edge=0.0567 mp=0.050 pressure=0.505 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:30:49,216 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6783 spread=0.0500 side=yes mp=0.947 entry=0.250[0m
+2026-04-21 13:30:49,216 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6783 adj_edge=0.5426 spread=0.0500 touch=2000
+2026-04-21 13:30:49,216 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5426 mp=0.947 pressure=0.514 gap=0.0500 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:30:49,217 [INFO] [96mCYCLE #26[0m
+2026-04-21 13:30:49,217 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:30:49,217 [INFO] [96mTOP:[0m
+2026-04-21 13:30:49,217 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.70
+2026-04-21 13:30:49,217 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0300 conviction=elite killer_now=0.715 killer_entry=0.668 spread_now=0.020 spread_entry=0.030 allow=0
+2026-04-21 13:30:49,217 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_negative
+2026-04-21 13:30:49,217 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_negative spread=0.020 volume=- edge=0.6984 mp=0.804 pressure=0.495[0m
+2026-04-21 13:30:49,217 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:30:49,217 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.020 volume=- edge=0.6984 mp=0.804 pressure=0.495[0m
+2026-04-21 13:30:49,217 [INFO]   (no signals this cycle)
+2026-04-21 13:30:49,217 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:30:49,217 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=1 attempts=0 buys=0 open=3
+2026-04-21 13:30:49,217 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=2 score=6
+2026-04-21 13:30:49,217 [INFO] [96mREJECTION_SUMMARY | weak_execution_quality=5 edge_floor=3 bad_liquidity=2 already_holding=1 killer_killer_score=1 no_tradeable_side=1 reinforce_pnl_negative=1[0m
+2026-04-21 13:30:49,217 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0500 spread=0.050 volume=- edge=0.5426 mp=0.947 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:30:49,217 [INFO] [96mNEAR_PASS_2 | ticker=KXETH-26APR2117-B2310 reason=killer_killer_score gap=0.0781 spread=0.030 volume=- edge=0.1123 mp=0.457 pressure=0.490[0m
+2026-04-21 13:30:49,217 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0876 spread=0.030 volume=- edge=-0.0796 mp=0.076 pressure=0.784[0m
+2026-04-21 13:30:49,217 [INFO] SKIPS | far_strike=99  no_liquidity=2  price=1  edge_gate=3  entry_score=6
+2026-04-21 13:30:49,217 [INFO] CYCLE #26 done — 0 signal(s)
+2026-04-21 13:30:49,218 [INFO] [DASH_UPDATE] cycle=26 markets=13 signals=0 buys=0
+2026-04-21 13:30:49,218 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:30:59,552 [INFO] FINAL_SPOT | BTC=75540.035 ETH=2307.405
+2026-04-21 13:31:00,236 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:00,398 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:00,404 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:31:00,405 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:31:02,527 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:31:02,527 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:31:02,527 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:31:02,531 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:31:02,531 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1290
+2026-04-21 13:31:02,532 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1290 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:31:02,532 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.715 fake_edge=False reinforce_eligible=False pnl=-0.0300 held=335
+2026-04-21 13:31:02,532 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:31:02,532 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:31:02,673 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0400 real_book=13 touch50=12 touch10=12 spread<=0.05=12 spread<=0.08=13 bad_regime=False[0m
+2026-04-21 13:31:02,673 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=bad_liquidity spread=0.030 volume=- edge=-0.2907 mp=0.456 pressure=0.495 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:31:02,673 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2298 min_edge=0.0080[0m
+2026-04-21 13:31:02,673 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2298 mp=0.331 pressure=0.496 gap=0.2378 threshold=0.0080[0m
+2026-04-21 13:31:02,673 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1716 min_edge=0.0080[0m
+2026-04-21 13:31:02,673 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.050 volume=- edge=-0.1716 mp=0.223 pressure=0.509 gap=0.1796 threshold=0.0080[0m
+2026-04-21 13:31:02,673 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1248 min_edge=0.0080[0m
+2026-04-21 13:31:02,673 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1248 mp=0.138 pressure=0.506 gap=0.1328 threshold=0.0080[0m
+2026-04-21 13:31:02,673 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0821 min_edge=0.0080[0m
+2026-04-21 13:31:02,673 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0821 mp=0.079 pressure=0.784 gap=0.0901 threshold=0.0080[0m
+2026-04-21 13:31:02,673 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3624 spread=0.0400 side=yes mp=0.586 entry=0.210[0m
+2026-04-21 13:31:02,673 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3624 adj_edge=0.2899 spread=0.0400 touch=2000
+2026-04-21 13:31:02,673 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.040 volume=- edge=0.2899 mp=0.586 pressure=0.508 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:31:02,673 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:31:02,673 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5516 spread=0.0200 side=yes mp=0.707 entry=0.150[0m
+2026-04-21 13:31:02,673 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:31:02,673 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.7036 spread=0.0200 side=yes mp=0.809 entry=0.100[0m
+2026-04-21 13:31:02,673 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8027 spread=0.0400 side=yes mp=0.886 entry=0.070[0m
+2026-04-21 13:31:02,673 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8027 adj_edge=0.6422 spread=0.0400 touch=2000
+2026-04-21 13:31:02,674 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6422 mp=0.886 pressure=0.494 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:31:02,674 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74375 edge=0.8748 spread=0.0400 side=yes mp=0.938 entry=0.050[0m
+2026-04-21 13:31:02,674 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74375 raw_edge=0.8748 adj_edge=0.6998 spread=0.0400 touch=2000
+2026-04-21 13:31:02,674 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=weak_execution_quality spread=0.040 volume=- edge=0.6998 mp=0.938 pressure=0.214 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:31:02,674 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1135 spread=0.0300 side=no mp=0.456 entry=0.420[0m
+2026-04-21 13:31:02,674 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=killer_killer_score spread=0.030 volume=- edge=0.1135 mp=0.456 pressure=0.490 gap=0.0777 threshold=0.5400[0m
+2026-04-21 13:31:02,674 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0766 spread=0.0400 side=no mp=0.050 entry=0.860[0m
+2026-04-21 13:31:02,674 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0766 adj_edge=0.0613 spread=0.0400 touch=2109
+2026-04-21 13:31:02,674 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0613 mp=0.050 pressure=0.505 detail=reason=elevated_spread_exec touch=2109[0m
+2026-04-21 13:31:02,674 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6839 spread=0.0400 side=yes mp=0.947 entry=0.250[0m
+2026-04-21 13:31:02,674 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6839 adj_edge=0.5471 spread=0.0400 touch=2000
+2026-04-21 13:31:02,674 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.040 volume=- edge=0.5471 mp=0.947 pressure=0.514 gap=0.0500 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:31:02,674 [INFO] [96mCYCLE #27[0m
+2026-04-21 13:31:02,674 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:31:02,674 [INFO] [96mTOP:[0m
+2026-04-21 13:31:02,674 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.70
+2026-04-21 13:31:02,674 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.55
+2026-04-21 13:31:02,674 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0300 conviction=elite killer_now=0.715 killer_entry=0.668 spread_now=0.020 spread_entry=0.030 allow=0
+2026-04-21 13:31:02,674 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_negative
+2026-04-21 13:31:02,674 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_negative spread=0.020 volume=- edge=0.7036 mp=0.809 pressure=0.495[0m
+2026-04-21 13:31:02,674 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:31:02,674 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.020 volume=- edge=0.7036 mp=0.809 pressure=0.495[0m
+2026-04-21 13:31:02,674 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B75125 pnl=+0.0300 conviction=elite killer_now=0.702 killer_entry=0.000 spread_now=0.020 spread_entry=0.020 allow=0
+2026-04-21 13:31:02,674 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=cap
+2026-04-21 13:31:02,674 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=reinforce_cap spread=0.020 volume=- edge=0.5516 mp=0.707 pressure=0.509[0m
+2026-04-21 13:31:02,675 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B75125 open=3/3
+2026-04-21 13:31:02,675 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=already_holding spread=0.020 volume=- edge=0.5516 mp=0.707 pressure=0.509[0m
+2026-04-21 13:31:02,675 [INFO]   (no signals this cycle)
+2026-04-21 13:31:02,675 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:31:02,675 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=0 buys=0 open=3
+2026-04-21 13:31:02,675 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=1 score=5
+2026-04-21 13:31:02,675 [INFO] [96mREJECTION_SUMMARY | edge_floor=4 weak_execution_quality=4 already_holding=2 bad_liquidity=1 killer_killer_score=1 no_tradeable_side=1 reinforce_cap=1 reinforce_pnl_negative=1[0m
+2026-04-21 13:31:02,675 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0500 spread=0.040 volume=- edge=0.5471 mp=0.947 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:31:02,675 [INFO] [96mNEAR_PASS_2 | ticker=KXETH-26APR2117-B2310 reason=killer_killer_score gap=0.0777 spread=0.030 volume=- edge=0.1135 mp=0.456 pressure=0.490[0m
+2026-04-21 13:31:02,675 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0901 spread=0.030 volume=- edge=-0.0821 mp=0.079 pressure=0.784[0m
+2026-04-21 13:31:02,675 [INFO] SKIPS | far_strike=99  no_liquidity=1  price=1  edge_gate=4  entry_score=5
+2026-04-21 13:31:02,675 [INFO] CYCLE #27 done — 0 signal(s)
+2026-04-21 13:31:02,676 [INFO] [DASH_UPDATE] cycle=27 markets=13 signals=0 buys=0
+2026-04-21 13:31:02,676 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:31:12,968 [INFO] FINAL_SPOT | BTC=75500.445 ETH=2306.405
+2026-04-21 13:31:13,595 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:13,755 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:13,759 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:31:13,759 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:31:16,007 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:31:16,008 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:31:16,008 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:31:16,018 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:31:16,020 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1303
+2026-04-21 13:31:16,020 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1303 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:31:16,020 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.694 fake_edge=False reinforce_eligible=False pnl=-0.0300 held=348
+2026-04-21 13:31:16,021 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:31:16,021 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:31:16,156 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0400 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=13 bad_regime=False[0m
+2026-04-21 13:31:16,156 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=bad_liquidity spread=0.030 volume=- edge=-0.2701 mp=0.435 pressure=0.495 gap=3.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:31:16,156 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2111 min_edge=0.0080[0m
+2026-04-21 13:31:16,156 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2111 mp=0.312 pressure=0.496 gap=0.2191 threshold=0.0080[0m
+2026-04-21 13:31:16,156 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=bad_liquidity spread=0.040 volume=- edge=-0.1572 mp=0.207 pressure=0.509 gap=7.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:31:16,156 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1135 min_edge=0.0080[0m
+2026-04-21 13:31:16,156 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1135 mp=0.127 pressure=0.770 gap=0.1215 threshold=0.0080[0m
+2026-04-21 13:31:16,156 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0746 min_edge=0.0080[0m
+2026-04-21 13:31:16,156 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0746 mp=0.071 pressure=0.784 gap=0.0826 threshold=0.0080[0m
+2026-04-21 13:31:16,156 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3419 spread=0.0400 side=yes mp=0.565 entry=0.210[0m
+2026-04-21 13:31:16,157 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3419 adj_edge=0.2735 spread=0.0400 touch=2182
+2026-04-21 13:31:16,157 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.040 volume=- edge=0.2735 mp=0.565 pressure=0.507 detail=reason=weak_execution_quality touch=2182[0m
+2026-04-21 13:31:16,157 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:31:16,157 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5336 spread=0.0200 side=yes mp=0.689 entry=0.150[0m
+2026-04-21 13:31:16,157 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:31:16,157 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6743 spread=0.0300 side=yes mp=0.795 entry=0.110[0m
+2026-04-21 13:31:16,157 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7926 spread=0.0400 side=yes mp=0.876 entry=0.070[0m
+2026-04-21 13:31:16,157 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7926 adj_edge=0.6341 spread=0.0400 touch=2000
+2026-04-21 13:31:16,157 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6341 mp=0.876 pressure=0.495 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:31:16,157 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74375 edge=0.8683 spread=0.0400 side=yes mp=0.932 entry=0.050[0m
+2026-04-21 13:31:16,157 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74375 raw_edge=0.8683 adj_edge=0.6946 spread=0.0400 touch=2000
+2026-04-21 13:31:16,157 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=weak_execution_quality spread=0.040 volume=- edge=0.6946 mp=0.932 pressure=0.214 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:31:16,157 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1305 spread=0.0300 side=no mp=0.439 entry=0.420[0m
+2026-04-21 13:31:16,157 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=killer_killer_score spread=0.030 volume=- edge=0.1305 mp=0.439 pressure=0.490 gap=0.0709 threshold=0.5400[0m
+2026-04-21 13:31:16,157 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0766 spread=0.0400 side=no mp=0.050 entry=0.860[0m
+2026-04-21 13:31:16,157 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0766 adj_edge=0.0613 spread=0.0400 touch=2109
+2026-04-21 13:31:16,157 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0613 mp=0.050 pressure=0.505 detail=reason=elevated_spread_exec touch=2109[0m
+2026-04-21 13:31:16,157 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6734 spread=0.0500 side=yes mp=0.943 entry=0.250[0m
+2026-04-21 13:31:16,157 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6734 adj_edge=0.5387 spread=0.0500 touch=2000
+2026-04-21 13:31:16,157 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5387 mp=0.943 pressure=0.514 gap=0.0500 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:31:16,157 [INFO] [96mCYCLE #28[0m
+2026-04-21 13:31:16,157 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:31:16,157 [INFO] [96mTOP:[0m
+2026-04-21 13:31:16,157 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.67
+2026-04-21 13:31:16,157 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.53
+2026-04-21 13:31:16,158 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0300 conviction=elite killer_now=0.694 killer_entry=0.668 spread_now=0.030 spread_entry=0.030 allow=0
+2026-04-21 13:31:16,158 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_negative
+2026-04-21 13:31:16,158 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_negative spread=0.030 volume=- edge=0.6743 mp=0.795 pressure=0.495[0m
+2026-04-21 13:31:16,158 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:31:16,158 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.030 volume=- edge=0.6743 mp=0.795 pressure=0.495[0m
+2026-04-21 13:31:16,158 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B75125 pnl=+0.0300 conviction=elite killer_now=0.702 killer_entry=0.000 spread_now=0.020 spread_entry=0.020 allow=0
+2026-04-21 13:31:16,158 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=cap
+2026-04-21 13:31:16,158 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=reinforce_cap spread=0.020 volume=- edge=0.5336 mp=0.689 pressure=0.509[0m
+2026-04-21 13:31:16,158 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B75125 open=3/3
+2026-04-21 13:31:16,158 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=already_holding spread=0.020 volume=- edge=0.5336 mp=0.689 pressure=0.509[0m
+2026-04-21 13:31:16,158 [INFO]   (no signals this cycle)
+2026-04-21 13:31:16,158 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:31:16,158 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=0 buys=0 open=3
+2026-04-21 13:31:16,158 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=2 score=5
+2026-04-21 13:31:16,158 [INFO] [96mREJECTION_SUMMARY | weak_execution_quality=4 edge_floor=3 already_holding=2 bad_liquidity=2 killer_killer_score=1 no_tradeable_side=1 reinforce_cap=1 reinforce_pnl_negative=1[0m
+2026-04-21 13:31:16,158 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0500 spread=0.050 volume=- edge=0.5387 mp=0.943 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:31:16,158 [INFO] [96mNEAR_PASS_2 | ticker=KXETH-26APR2117-B2310 reason=killer_killer_score gap=0.0709 spread=0.030 volume=- edge=0.1305 mp=0.439 pressure=0.490[0m
+2026-04-21 13:31:16,158 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0826 spread=0.030 volume=- edge=-0.0746 mp=0.071 pressure=0.784[0m
+2026-04-21 13:31:16,158 [INFO] SKIPS | far_strike=99  no_liquidity=2  price=1  edge_gate=3  entry_score=5
+2026-04-21 13:31:16,158 [INFO] CYCLE #28 done — 0 signal(s)
+2026-04-21 13:31:16,159 [INFO] [DASH_UPDATE] cycle=28 markets=13 signals=0 buys=0
+2026-04-21 13:31:16,159 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:31:26,654 [INFO] FINAL_SPOT | BTC=75500.445 ETH=2306.695
+2026-04-21 13:31:27,629 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:27,723 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:27,728 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:31:27,728 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:31:30,811 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:31:30,812 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:31:30,812 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:31:30,820 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:31:30,821 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1318
+2026-04-21 13:31:30,821 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1318 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:31:30,821 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.715 fake_edge=False reinforce_eligible=False pnl=-0.0300 held=363
+2026-04-21 13:31:30,822 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:31:30,822 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:31:30,954 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0400 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=13 bad_regime=False[0m
+2026-04-21 13:31:30,955 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2722 min_edge=0.0080[0m
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.040 volume=- edge=-0.2722 mp=0.435 pressure=0.494 gap=0.2802 threshold=0.0080[0m
+2026-04-21 13:31:30,955 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2109 min_edge=0.0080[0m
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2109 mp=0.312 pressure=0.496 gap=0.2189 threshold=0.0080[0m
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=bad_liquidity spread=0.040 volume=- edge=-0.1570 mp=0.207 pressure=0.509 gap=7.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:31:30,955 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1133 min_edge=0.0080[0m
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1133 mp=0.127 pressure=0.770 gap=0.1213 threshold=0.0080[0m
+2026-04-21 13:31:30,955 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0744 min_edge=0.0080[0m
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0744 mp=0.071 pressure=0.783 gap=0.0824 threshold=0.0080[0m
+2026-04-21 13:31:30,955 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3420 spread=0.0400 side=yes mp=0.565 entry=0.210[0m
+2026-04-21 13:31:30,955 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3420 adj_edge=0.2736 spread=0.0400 touch=2182
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.040 volume=- edge=0.2736 mp=0.565 pressure=0.508 detail=reason=weak_execution_quality touch=2182[0m
+2026-04-21 13:31:30,955 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:31:30,955 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5338 spread=0.0200 side=yes mp=0.689 entry=0.150[0m
+2026-04-21 13:31:30,955 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:31:30,955 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6896 spread=0.0200 side=yes mp=0.795 entry=0.100[0m
+2026-04-21 13:31:30,955 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.7928 spread=0.0400 side=yes mp=0.876 entry=0.070[0m
+2026-04-21 13:31:30,955 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.7928 adj_edge=0.6342 spread=0.0400 touch=2000
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6342 mp=0.876 pressure=0.495 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:31:30,955 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74375 edge=0.8685 spread=0.0400 side=yes mp=0.932 entry=0.050[0m
+2026-04-21 13:31:30,955 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74375 raw_edge=0.8685 adj_edge=0.6948 spread=0.0400 touch=2000
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=weak_execution_quality spread=0.040 volume=- edge=0.6948 mp=0.932 pressure=0.214 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:31:30,955 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1256 spread=0.0300 side=no mp=0.444 entry=0.420[0m
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=killer_killer_score spread=0.030 volume=- edge=0.1256 mp=0.444 pressure=0.490 gap=0.0728 threshold=0.5400[0m
+2026-04-21 13:31:30,955 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0766 spread=0.0400 side=no mp=0.050 entry=0.860[0m
+2026-04-21 13:31:30,955 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0766 adj_edge=0.0613 spread=0.0400 touch=2109
+2026-04-21 13:31:30,955 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0613 mp=0.050 pressure=0.505 detail=reason=elevated_spread_exec touch=2109[0m
+2026-04-21 13:31:30,955 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.6750 spread=0.0500 side=yes mp=0.944 entry=0.250[0m
+2026-04-21 13:31:30,956 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.6750 adj_edge=0.5400 spread=0.0500 touch=2000
+2026-04-21 13:31:30,956 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5400 mp=0.944 pressure=0.514 gap=0.0500 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:31:30,956 [INFO] [96mCYCLE #29[0m
+2026-04-21 13:31:30,956 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:31:30,956 [INFO] [96mTOP:[0m
+2026-04-21 13:31:30,956 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.69
+2026-04-21 13:31:30,956 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.53
+2026-04-21 13:31:30,956 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0300 conviction=elite killer_now=0.715 killer_entry=0.668 spread_now=0.020 spread_entry=0.030 allow=0
+2026-04-21 13:31:30,956 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_negative
+2026-04-21 13:31:30,956 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_negative spread=0.020 volume=- edge=0.6896 mp=0.795 pressure=0.495[0m
+2026-04-21 13:31:30,956 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:31:30,956 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.020 volume=- edge=0.6896 mp=0.795 pressure=0.495[0m
+2026-04-21 13:31:30,956 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B75125 pnl=+0.0300 conviction=elite killer_now=0.702 killer_entry=0.000 spread_now=0.020 spread_entry=0.020 allow=0
+2026-04-21 13:31:30,956 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=cap
+2026-04-21 13:31:30,956 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=reinforce_cap spread=0.020 volume=- edge=0.5338 mp=0.689 pressure=0.509[0m
+2026-04-21 13:31:30,956 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B75125 open=3/3
+2026-04-21 13:31:30,956 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=already_holding spread=0.020 volume=- edge=0.5338 mp=0.689 pressure=0.509[0m
+2026-04-21 13:31:30,956 [INFO]   (no signals this cycle)
+2026-04-21 13:31:30,956 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:31:30,956 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=0 buys=0 open=3
+2026-04-21 13:31:30,956 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=1 score=5
+2026-04-21 13:31:30,956 [INFO] [96mREJECTION_SUMMARY | edge_floor=4 weak_execution_quality=4 already_holding=2 bad_liquidity=1 killer_killer_score=1 no_tradeable_side=1 reinforce_cap=1 reinforce_pnl_negative=1[0m
+2026-04-21 13:31:30,957 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0500 spread=0.050 volume=- edge=0.5400 mp=0.944 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:31:30,957 [INFO] [96mNEAR_PASS_2 | ticker=KXETH-26APR2117-B2310 reason=killer_killer_score gap=0.0728 spread=0.030 volume=- edge=0.1256 mp=0.444 pressure=0.490[0m
+2026-04-21 13:31:30,957 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0824 spread=0.030 volume=- edge=-0.0744 mp=0.071 pressure=0.783[0m
+2026-04-21 13:31:30,957 [INFO] SKIPS | far_strike=99  no_liquidity=1  price=1  edge_gate=4  entry_score=5
+2026-04-21 13:31:30,957 [INFO] CYCLE #29 done — 0 signal(s)
+2026-04-21 13:31:30,957 [INFO] [DASH_UPDATE] cycle=29 markets=13 signals=0 buys=0
+2026-04-21 13:31:30,957 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:31:41,315 [INFO] FINAL_SPOT | BTC=75508.005 ETH=2307.915
+2026-04-21 13:31:41,878 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:41,988 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:41,992 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:31:41,993 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:31:44,129 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:31:44,130 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:31:44,130 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:31:44,137 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:31:44,139 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1332
+2026-04-21 13:31:44,139 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1332 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:31:44,139 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.668 fake_edge=False reinforce_eligible=False pnl=-0.0400 held=376
+2026-04-21 13:31:44,140 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:31:44,140 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:31:44,277 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0400 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:31:44,277 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2738 min_edge=0.0080[0m
+2026-04-21 13:31:44,277 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.040 volume=- edge=-0.2738 mp=0.439 pressure=0.494 gap=0.2818 threshold=0.0080[0m
+2026-04-21 13:31:44,278 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.1985 min_edge=0.0080[0m
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.040 volume=- edge=-0.1985 mp=0.315 pressure=0.497 gap=0.2065 threshold=0.0080[0m
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=bad_liquidity spread=0.030 volume=- edge=-0.1447 mp=0.210 pressure=0.509 gap=7.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:31:44,278 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.0994 min_edge=0.0080[0m
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.030 volume=- edge=-0.0994 mp=0.129 pressure=0.507 gap=0.1074 threshold=0.0080[0m
+2026-04-21 13:31:44,278 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0756 min_edge=0.0080[0m
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0756 mp=0.073 pressure=0.784 gap=0.0836 threshold=0.0080[0m
+2026-04-21 13:31:44,278 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3428 spread=0.0400 side=yes mp=0.569 entry=0.210[0m
+2026-04-21 13:31:44,278 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3428 adj_edge=0.2742 spread=0.0400 touch=182
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.040 volume=- edge=0.2742 mp=0.569 pressure=0.508 detail=reason=weak_execution_quality touch=182[0m
+2026-04-21 13:31:44,278 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:31:44,278 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5316 spread=0.0300 side=yes mp=0.693 entry=0.150[0m
+2026-04-21 13:31:44,278 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:31:44,278 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6717 spread=0.0400 side=yes mp=0.798 entry=0.110[0m
+2026-04-21 13:31:44,278 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74875 raw_edge=0.6717 adj_edge=0.5374 spread=0.0400 touch=2000
+2026-04-21 13:31:44,278 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8019 spread=0.0400 side=yes mp=0.878 entry=0.060[0m
+2026-04-21 13:31:44,278 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8019 adj_edge=0.6415 spread=0.0400 touch=2216
+2026-04-21 13:31:44,278 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.040 entry_price=0.060 assigned=STARTER size_mult=0.50
+2026-04-21 13:31:44,278 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.933 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:31:44,278 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0991 spread=0.0400 side=no mp=0.464 entry=0.420[0m
+2026-04-21 13:31:44,278 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0991 adj_edge=0.0793 spread=0.0400 touch=2000
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0793 mp=0.464 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:31:44,278 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0967 spread=0.0400 side=no mp=0.050 entry=0.840[0m
+2026-04-21 13:31:44,278 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0967 adj_edge=0.0774 spread=0.0400 touch=2000
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0774 mp=0.050 pressure=0.504 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:31:44,278 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7008 spread=0.0500 side=yes mp=0.950 entry=0.230[0m
+2026-04-21 13:31:44,278 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7008 adj_edge=0.5606 spread=0.0500 touch=2000
+2026-04-21 13:31:44,278 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5606 mp=0.950 pressure=0.514 gap=0.0300 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:31:44,279 [INFO] [96mCYCLE #30[0m
+2026-04-21 13:31:44,279 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:31:44,279 [INFO] [96mTOP:[0m
+2026-04-21 13:31:44,279 [INFO] 1. KXBTC-26APR2117-B74625-YES e=0.64
+2026-04-21 13:31:44,279 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.53
+2026-04-21 13:31:44,279 [INFO] 3. KXBTC-26APR2117-B74875-YES e=0.54
+2026-04-21 13:31:44,279 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_normal pressure=0.497 spread=0.040 touch=2216[0m
+2026-04-21 13:31:44,279 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=portfolio_full spread=0.040 volume=- edge=0.6415 mp=0.878 pressure=0.497 detail=open_cap current_open=3[0m
+2026-04-21 13:31:44,279 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B75125 pnl=+0.0200 conviction=elite killer_now=0.676 killer_entry=0.000 spread_now=0.030 spread_entry=0.030 allow=0
+2026-04-21 13:31:44,279 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=cap
+2026-04-21 13:31:44,279 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=reinforce_cap spread=0.030 volume=- edge=0.5316 mp=0.693 pressure=0.509[0m
+2026-04-21 13:31:44,279 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B75125 open=3/3
+2026-04-21 13:31:44,279 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=already_holding spread=0.030 volume=- edge=0.5316 mp=0.693 pressure=0.509[0m
+2026-04-21 13:31:44,279 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0400 conviction=elite killer_now=0.668 killer_entry=0.668 spread_now=0.040 spread_entry=0.030 allow=0
+2026-04-21 13:31:44,279 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_not_improving
+2026-04-21 13:31:44,279 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_not_improving spread=0.040 volume=- edge=0.5374 mp=0.798 pressure=0.495[0m
+2026-04-21 13:31:44,279 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:31:44,279 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.040 volume=- edge=0.5374 mp=0.798 pressure=0.495[0m
+2026-04-21 13:31:44,279 [INFO]   (no signals this cycle)
+2026-04-21 13:31:44,279 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:31:44,279 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=3 attempts=0 buys=0 open=3
+2026-04-21 13:31:44,279 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=1 score=3
+2026-04-21 13:31:44,279 [INFO] [96mREJECTION_SUMMARY | edge_floor=4 weak_execution_quality=3 already_holding=2 bad_liquidity=1 low_edge=1 no_tradeable_side=1 portfolio_full=1 reinforce_cap=1 reinforce_pnl_not_improving=1[0m
+2026-04-21 13:31:44,279 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0300 spread=0.050 volume=- edge=0.5606 mp=0.950 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:31:44,280 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0836 spread=0.030 volume=- edge=-0.0756 mp=0.073 pressure=0.784[0m
+2026-04-21 13:31:44,280 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1074 spread=0.030 volume=- edge=-0.0994 mp=0.129 pressure=0.507[0m
+2026-04-21 13:31:44,397 [INFO] PERF_FAMILY | ?(w=0,l=12,pnl=$+0.00) KXBTC(w=903,l=30633,pnl=red$-3,839.20[0m) KXETH(w=287,l=9141,pnl=red$-3,888.67[0m)
+2026-04-21 13:31:44,409 [INFO] PERF_HOURS  | under_1h(w=1149,l=35895,pnl=red$-7,480.59[0m) 1h_to_24h(w=41,l=3558,pnl=red$-229.60[0m) over_24h(w=0,l=333,pnl=red$-17.68[0m)
+2026-04-21 13:31:44,423 [INFO] PERF_TIER   | T1(w=757,l=21543,pnl=red$-5,600.62[0m,wr=3.4%) T2(w=433,l=18243,pnl=red$-2,127.25[0m,wr=2.3%)
+2026-04-21 13:31:44,431 [INFO] [92mTOP WIN     | KXBTC-26APR1517-B74875 | YES | pnl=green$+5.33[0m | ev=91.35% | hours=0.84[0m
+2026-04-21 13:31:44,431 [INFO] [91mTOP LOSS    | KXBTC-26APR1007-B72350 | YES | pnl=red$-5.00[0m | ev=2.11% | hours=0.25[0m
+2026-04-21 13:31:44,436 [INFO] [96mEARLY       | wins=67 losses=2674 pnl=red$-197.74[0m[0m
+2026-04-21 13:31:44,442 [INFO] [96mFRESH_HFT   | resolved=0  early_wins=0  early_losses=0  expiry=0  early_pnl=$+0.00  win_rate=0.0%[0m
+2026-04-21 13:31:44,442 [INFO] [96mHFT_STATS   | trades=0  wins=0  losses=0  wr=0.0%  avg_hold=0.0s  avg_win=$+0.000  avg_loss=$+0.000[0m
+2026-04-21 13:31:44,448 [INFO] SKIPS | far_strike=99  no_liquidity=1  price=1  edge_gate=5  entry_score=3
+2026-04-21 13:31:44,448 [INFO] CYCLE #30 done — 0 signal(s)
+2026-04-21 13:31:44,449 [INFO] [DASH_UPDATE] cycle=30 markets=13 signals=0 buys=0
+2026-04-21 13:31:44,449 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:31:54,937 [INFO] FINAL_SPOT | BTC=75521.155 ETH=2307.915
+2026-04-21 13:31:55,487 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:55,584 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:31:55,588 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:31:55,589 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:31:57,753 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:31:57,754 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:31:57,754 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:31:57,761 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:31:57,763 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1345
+2026-04-21 13:31:57,763 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1345 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:31:57,763 [INFO] [HELD DECAY] ticker=KXBTC-26APR2117-B74875 killer=0.668 fake_edge=False reinforce_eligible=False pnl=-0.0400 held=390
+2026-04-21 13:31:57,764 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=3
+2026-04-21 13:31:57,764 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:31:57,899 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0400 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:31:57,899 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2806 min_edge=0.0080[0m
+2026-04-21 13:31:57,899 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.040 volume=- edge=-0.2806 mp=0.446 pressure=0.494 gap=0.2886 threshold=0.0080[0m
+2026-04-21 13:31:57,899 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2045 min_edge=0.0080[0m
+2026-04-21 13:31:57,899 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.040 volume=- edge=-0.2045 mp=0.321 pressure=0.497 gap=0.2125 threshold=0.0080[0m
+2026-04-21 13:31:57,899 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=bad_liquidity spread=0.030 volume=- edge=-0.1495 mp=0.215 pressure=0.509 gap=7.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:31:57,899 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1029 min_edge=0.0080[0m
+2026-04-21 13:31:57,899 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.030 volume=- edge=-0.1029 mp=0.132 pressure=0.507 gap=0.1109 threshold=0.0080[0m
+2026-04-21 13:31:57,899 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0779 min_edge=0.0080[0m
+2026-04-21 13:31:57,899 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.030 volume=- edge=-0.0779 mp=0.075 pressure=0.783 gap=0.0859 threshold=0.0080[0m
+2026-04-21 13:31:57,899 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3472 spread=0.0500 side=yes mp=0.576 entry=0.210[0m
+2026-04-21 13:31:57,899 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3472 adj_edge=0.2778 spread=0.0500 touch=2000
+2026-04-21 13:31:57,900 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.2778 mp=0.576 pressure=0.502 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:31:57,900 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B75125
+2026-04-21 13:31:57,900 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5536 spread=0.0200 side=yes mp=0.699 entry=0.140[0m
+2026-04-21 13:31:57,900 [INFO] [HELD TRACE] entering pipeline ticker=KXBTC-26APR2117-B74875
+2026-04-21 13:31:57,900 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6767 spread=0.0400 side=yes mp=0.803 entry=0.110[0m
+2026-04-21 13:31:57,900 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74875 raw_edge=0.6767 adj_edge=0.5414 spread=0.0400 touch=2000
+2026-04-21 13:31:57,900 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8055 spread=0.0400 side=yes mp=0.882 entry=0.060[0m
+2026-04-21 13:31:57,900 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8055 adj_edge=0.6444 spread=0.0400 touch=2216
+2026-04-21 13:31:57,900 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.040 entry_price=0.060 assigned=STARTER size_mult=0.50
+2026-04-21 13:31:57,900 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:31:57,900 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.936 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:31:57,900 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0991 spread=0.0400 side=no mp=0.464 entry=0.420[0m
+2026-04-21 13:31:57,900 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0991 adj_edge=0.0793 spread=0.0400 touch=2000
+2026-04-21 13:31:57,900 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0793 mp=0.464 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:31:57,900 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0967 spread=0.0400 side=no mp=0.050 entry=0.840[0m
+2026-04-21 13:31:57,900 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0967 adj_edge=0.0774 spread=0.0400 touch=2000
+2026-04-21 13:31:57,900 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0774 mp=0.050 pressure=0.504 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:31:57,900 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7009 spread=0.0500 side=yes mp=0.950 entry=0.230[0m
+2026-04-21 13:31:57,900 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7009 adj_edge=0.5607 spread=0.0500 touch=2000
+2026-04-21 13:31:57,900 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5607 mp=0.950 pressure=0.514 gap=0.0300 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:31:57,900 [INFO] [96mCYCLE #31[0m
+2026-04-21 13:31:57,900 [INFO] [96mBANKROLL: $70.74 | OPEN: 3 | RISK: 5.7%[0m
+2026-04-21 13:31:57,900 [INFO] [96mTOP:[0m
+2026-04-21 13:31:57,900 [INFO] 1. KXBTC-26APR2117-B75125-YES e=0.55
+2026-04-21 13:31:57,900 [INFO] 2. KXBTC-26APR2117-B74625-YES e=0.64
+2026-04-21 13:31:57,900 [INFO] 3. KXBTC-26APR2117-B74875-YES e=0.54
+2026-04-21 13:31:57,901 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B75125 pnl=+0.0200 conviction=elite killer_now=0.706 killer_entry=0.000 spread_now=0.020 spread_entry=0.020 allow=0
+2026-04-21 13:31:57,901 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=cap
+2026-04-21 13:31:57,901 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=reinforce_cap spread=0.020 volume=- edge=0.5536 mp=0.699 pressure=0.509[0m
+2026-04-21 13:31:57,901 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B75125 open=3/3
+2026-04-21 13:31:57,901 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=already_holding spread=0.020 volume=- edge=0.5536 mp=0.699 pressure=0.509[0m
+2026-04-21 13:31:57,901 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_normal pressure=0.497 spread=0.040 touch=2216[0m
+2026-04-21 13:31:57,901 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=portfolio_full spread=0.040 volume=- edge=0.6444 mp=0.882 pressure=0.497 detail=open_cap current_open=3[0m
+2026-04-21 13:31:57,901 [INFO] [REINFORCE_CHECK] ticker=KXBTC-26APR2117-B74875 pnl=-0.0400 conviction=elite killer_now=0.668 killer_entry=0.668 spread_now=0.040 spread_entry=0.030 allow=0
+2026-04-21 13:31:57,901 [INFO] [REINFORCE_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=pnl_not_improving
+2026-04-21 13:31:57,901 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reinforce_pnl_not_improving spread=0.040 volume=- edge=0.5414 mp=0.803 pressure=0.495[0m
+2026-04-21 13:31:57,901 [INFO] [ENTRY BLOCKED] already holding KXBTC-26APR2117-B74875 open=3/3
+2026-04-21 13:31:57,901 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=already_holding spread=0.040 volume=- edge=0.5414 mp=0.803 pressure=0.495[0m
+2026-04-21 13:31:57,901 [INFO]   (no signals this cycle)
+2026-04-21 13:31:57,901 [INFO] [96mCAPITAL_SUMMARY | cash_balance=65.64 open_exposure=5.10 realized_cash_pnl=red$-19.26[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:31:57,901 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=3 attempts=0 buys=0 open=3
+2026-04-21 13:31:57,901 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=1 score=3
+2026-04-21 13:31:57,901 [INFO] [96mREJECTION_SUMMARY | edge_floor=4 weak_execution_quality=3 already_holding=2 bad_liquidity=1 low_edge=1 no_tradeable_side=1 portfolio_full=1 reinforce_cap=1 reinforce_pnl_not_improving=1[0m
+2026-04-21 13:31:57,901 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0300 spread=0.050 volume=- edge=0.5607 mp=0.950 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:31:57,901 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0859 spread=0.030 volume=- edge=-0.0779 mp=0.075 pressure=0.783[0m
+2026-04-21 13:31:57,901 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1109 spread=0.030 volume=- edge=-0.1029 mp=0.132 pressure=0.507[0m
+2026-04-21 13:31:57,901 [INFO] SKIPS | far_strike=99  no_liquidity=1  price=1  edge_gate=5  entry_score=3
+2026-04-21 13:31:57,901 [INFO] CYCLE #31 done — 0 signal(s)
+2026-04-21 13:31:57,902 [INFO] [DASH_UPDATE] cycle=31 markets=13 signals=0 buys=0
+2026-04-21 13:31:57,902 [INFO] [STATE_SAVE] realized_cash_pnl=-19.26 last_exit_meta=66 reinforce_count=5
+2026-04-21 13:32:08,236 [INFO] FINAL_SPOT | BTC=75556.675 ETH=2309.085
+2026-04-21 13:32:08,793 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:32:08,919 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:32:08,924 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:32:08,924 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:32:11,059 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:32:11,060 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:32:11,060 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:32:11,067 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=3
+2026-04-21 13:32:11,069 [INFO] [92mEXIT KXBTC-26APR2117-B75125 pnl=+1.0%[0m
+2026-04-21 13:32:11,069 [INFO] [EXPECTANCY] side=YES tier=NORMAL regime=OTHER exit=trail expiry=LT_15M pnl=+0.020
+2026-04-21 13:32:11,070 [INFO] [92mCAPITAL_UPDATE | event=exit cash_balance=70.76 open_exposure=0.00 realized_cash_pnl=red$-19.24[0m[0m
+2026-04-21 13:32:11,070 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1358
+2026-04-21 13:32:11,070 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1358 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:32:11,070 [INFO] [91mEXIT KXBTC-26APR2117-B74875 pnl=-5.0%[0m
+2026-04-21 13:32:11,071 [INFO] [EXPECTANCY] side=YES tier=ELITE regime=MOM_FRAGILE exit=hard_stop expiry=H1_4 pnl=-0.050
+2026-04-21 13:32:11,071 [INFO] [91mCAPITAL_UPDATE | event=exit cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m[0m
+2026-04-21 13:32:11,071 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=1
+2026-04-21 13:32:11,071 [INFO] [96mEarly exits this cycle: 1 win(s), 1 loss(es), pnl=red$-0.03[0m[0m
+2026-04-21 13:32:11,072 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=1 trail=1 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:32:11,074 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
+2026-04-21 13:32:11,207 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0400 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:32:11,208 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2834 min_edge=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2834 mp=0.464 pressure=0.494 gap=0.2914 threshold=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2271 min_edge=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2271 mp=0.338 pressure=0.497 gap=0.2351 threshold=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1615 min_edge=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.040 volume=- edge=-0.1615 mp=0.228 pressure=0.509 gap=0.1695 threshold=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1155 min_edge=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1155 mp=0.142 pressure=0.506 gap=0.1235 threshold=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0747 min_edge=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.040 volume=- edge=-0.0747 mp=0.081 pressure=0.784 gap=0.0827 threshold=0.0080[0m
+2026-04-21 13:32:11,208 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3752 spread=0.0500 side=yes mp=0.595 entry=0.200[0m
+2026-04-21 13:32:11,208 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3752 adj_edge=0.3002 spread=0.0500 touch=2189
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.3002 mp=0.595 pressure=0.508 detail=reason=elevated_spread_exec touch=2189[0m
+2026-04-21 13:32:11,208 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5640 spread=0.0300 side=yes mp=0.715 entry=0.140[0m
+2026-04-21 13:32:11,208 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5640 adj_edge=0.4512 spread=0.0300 touch=2000
+2026-04-21 13:32:11,208 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.6988 spread=0.0400 side=yes mp=0.816 entry=0.100[0m
+2026-04-21 13:32:11,208 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74875 raw_edge=0.6988 adj_edge=0.5590 spread=0.0400 touch=2000
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=weak_execution_quality spread=0.040 volume=- edge=0.5590 mp=0.816 pressure=0.496 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:32:11,208 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8146 spread=0.0400 side=yes mp=0.891 entry=0.060[0m
+2026-04-21 13:32:11,208 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8146 adj_edge=0.6517 spread=0.0400 touch=2216
+2026-04-21 13:32:11,208 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.040 entry_price=0.060 assigned=STARTER size_mult=0.50
+2026-04-21 13:32:11,208 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.941 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:32:11,208 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0791 spread=0.0400 side=no mp=0.484 entry=0.420[0m
+2026-04-21 13:32:11,208 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0791 adj_edge=0.0633 spread=0.0400 touch=2000
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0633 mp=0.484 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:32:11,208 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0930 spread=0.0400 side=no mp=0.050 entry=0.840[0m
+2026-04-21 13:32:11,208 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0930 adj_edge=0.0744 spread=0.0400 touch=99
+2026-04-21 13:32:11,208 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0744 mp=0.050 pressure=0.504 detail=reason=weak_execution_quality touch=99[0m
+2026-04-21 13:32:11,208 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7109 spread=0.0500 side=yes mp=0.950 entry=0.220[0m
+2026-04-21 13:32:11,208 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7109 adj_edge=0.5687 spread=0.0500 touch=2000
+2026-04-21 13:32:11,209 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5687 mp=0.950 pressure=0.514 gap=0.0200 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:32:11,209 [INFO] [96mCYCLE #32[0m
+2026-04-21 13:32:11,209 [INFO] [96mBANKROLL: $70.71 | OPEN: 1 | RISK: 2.7%[0m
+2026-04-21 13:32:11,209 [INFO] [96mTOP:[0m
+2026-04-21 13:32:11,209 [INFO] 1. KXBTC-26APR2117-B74625-YES e=0.65
+2026-04-21 13:32:11,209 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.45
+2026-04-21 13:32:11,209 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_normal pressure=0.497 spread=0.040 touch=2216[0m
+2026-04-21 13:32:11,209 [INFO] [KELLY_LITE] ticker=KXBTC-26APR2117-B74625 edge_strength=1.000 conviction_factor=0.900 book_factor=0.648 spread_drag=0.060 mult=0.756
+2026-04-21 13:32:11,209 [INFO] [ENTRY_GATE] ticker=KXBTC-26APR2117-B74625 regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216 allowed=False reason=no_side_control
+2026-04-21 13:32:11,209 [INFO] [93m[ENTRY_BLOCK] ticker=KXBTC-26APR2117-B74625 reason=no_side_control regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216[0m
+2026-04-21 13:32:11,209 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=final_no_side_control spread=0.040 volume=- edge=0.6517 mp=0.891 pressure=0.497 detail=regime=momentum_normal[0m
+2026-04-21 13:32:11,209 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown prev_edge=6.853 new_edge=0.451[0m
+2026-04-21 13:32:11,209 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown spread=0.030 volume=- edge=0.4512 mp=0.715 pressure=0.509 detail=prev_edge=6.853[0m
+2026-04-21 13:32:11,209 [INFO]   (no signals this cycle)
+2026-04-21 13:32:11,209 [INFO] [96mCAPITAL_SUMMARY | cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m bought_this_cycle=0 exited_this_cycle=2 rotated_this_cycle=0[0m
+2026-04-21 13:32:11,209 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=1 buys=0 open=1
+2026-04-21 13:32:11,209 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=4
+2026-04-21 13:32:11,209 [INFO] [96mREJECTION_SUMMARY | edge_floor=5 weak_execution_quality=4 final_no_side_control=1 fresh_reentry_cooldown=1 low_edge=1 no_tradeable_side=1[0m
+2026-04-21 13:32:11,209 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0200 spread=0.050 volume=- edge=0.5687 mp=0.950 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:32:11,209 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0827 spread=0.040 volume=- edge=-0.0747 mp=0.081 pressure=0.784[0m
+2026-04-21 13:32:11,209 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1235 spread=0.040 volume=- edge=-0.1155 mp=0.142 pressure=0.506[0m
+2026-04-21 13:32:11,210 [INFO] SKIPS | far_strike=99  price=1  reentry_blk=1  edge_gate=6  entry_score=4
+2026-04-21 13:32:11,210 [INFO] CYCLE #32 done — 0 signal(s)
+2026-04-21 13:32:11,210 [INFO] [DASH_UPDATE] cycle=32 markets=13 signals=0 buys=0
+2026-04-21 13:32:11,210 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
+2026-04-21 13:32:21,598 [INFO] FINAL_SPOT | BTC=75556.675 ETH=2309.085
+2026-04-21 13:32:22,097 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:32:22,205 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:32:22,209 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:32:22,211 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:32:24,324 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:32:24,325 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:32:24,325 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:32:24,332 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=1
+2026-04-21 13:32:24,333 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1372
+2026-04-21 13:32:24,333 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1372 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:32:24,334 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=1
+2026-04-21 13:32:24,334 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:32:24,469 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:32:24,469 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2834 min_edge=0.0080[0m
+2026-04-21 13:32:24,469 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2834 mp=0.464 pressure=0.494 gap=0.2914 threshold=0.0080[0m
+2026-04-21 13:32:24,469 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2170 min_edge=0.0080[0m
+2026-04-21 13:32:24,469 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2170 mp=0.338 pressure=0.497 gap=0.2250 threshold=0.0080[0m
+2026-04-21 13:32:24,469 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=bad_liquidity spread=0.030 volume=- edge=-0.1530 mp=0.228 pressure=0.501 gap=7.0000 threshold=8.0000 detail=side=no[0m
+2026-04-21 13:32:24,470 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1211 min_edge=0.0080[0m
+2026-04-21 13:32:24,470 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.050 volume=- edge=-0.1211 mp=0.142 pressure=0.506 gap=0.1291 threshold=0.0080[0m
+2026-04-21 13:32:24,470 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0746 min_edge=0.0080[0m
+2026-04-21 13:32:24,470 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.040 volume=- edge=-0.0746 mp=0.081 pressure=0.784 gap=0.0826 threshold=0.0080[0m
+2026-04-21 13:32:24,470 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3753 spread=0.0500 side=yes mp=0.595 entry=0.200[0m
+2026-04-21 13:32:24,470 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3753 adj_edge=0.3002 spread=0.0500 touch=2189
+2026-04-21 13:32:24,470 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.3002 mp=0.595 pressure=0.508 detail=reason=elevated_spread_exec touch=2189[0m
+2026-04-21 13:32:24,470 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5641 spread=0.0300 side=yes mp=0.716 entry=0.140[0m
+2026-04-21 13:32:24,470 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5641 adj_edge=0.4513 spread=0.0300 touch=2000
+2026-04-21 13:32:24,470 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.7156 spread=0.0300 side=yes mp=0.816 entry=0.090[0m
+2026-04-21 13:32:24,470 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74875 reason=no_tier spread=0.030 entry_price=0.090 assigned=STARTER size_mult=0.50
+2026-04-21 13:32:24,470 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8148 spread=0.0400 side=yes mp=0.891 entry=0.060[0m
+2026-04-21 13:32:24,470 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8148 adj_edge=0.6518 spread=0.0400 touch=2216
+2026-04-21 13:32:24,470 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6518 mp=0.891 pressure=0.235 detail=reason=weak_execution_quality touch=2216[0m
+2026-04-21 13:32:24,470 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:32:24,470 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.942 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:32:24,470 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0791 spread=0.0400 side=no mp=0.484 entry=0.420[0m
+2026-04-21 13:32:24,470 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0791 adj_edge=0.0633 spread=0.0400 touch=2000
+2026-04-21 13:32:24,470 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0633 mp=0.484 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:32:24,470 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0930 spread=0.0400 side=no mp=0.050 entry=0.840[0m
+2026-04-21 13:32:24,470 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0930 adj_edge=0.0744 spread=0.0400 touch=99
+2026-04-21 13:32:24,470 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0744 mp=0.050 pressure=0.505 detail=reason=weak_execution_quality touch=99[0m
+2026-04-21 13:32:24,470 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7109 spread=0.0500 side=yes mp=0.950 entry=0.220[0m
+2026-04-21 13:32:24,470 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7109 adj_edge=0.5687 spread=0.0500 touch=2000
+2026-04-21 13:32:24,470 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5687 mp=0.950 pressure=0.506 gap=0.0200 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:32:24,470 [INFO] [96mCYCLE #33[0m
+2026-04-21 13:32:24,470 [INFO] [96mBANKROLL: $70.71 | OPEN: 1 | RISK: 2.7%[0m
+2026-04-21 13:32:24,470 [INFO] [96mTOP:[0m
+2026-04-21 13:32:24,470 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.72
+2026-04-21 13:32:24,470 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.45
+2026-04-21 13:32:24,471 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=low_pressure regime=momentum_normal pressure=0.497 spread=0.030 touch=2000[0m
+2026-04-21 13:32:24,471 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=cooldown_short spread=0.030 volume=- edge=0.7156 mp=0.816 pressure=0.497[0m
+2026-04-21 13:32:24,471 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown prev_edge=6.853 new_edge=0.451[0m
+2026-04-21 13:32:24,471 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown spread=0.030 volume=- edge=0.4513 mp=0.716 pressure=0.509 detail=prev_edge=6.853[0m
+2026-04-21 13:32:24,471 [INFO]   (no signals this cycle)
+2026-04-21 13:32:24,471 [INFO] [96mCAPITAL_SUMMARY | cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:32:24,471 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=0 buys=0 open=1
+2026-04-21 13:32:24,471 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=1 score=4
+2026-04-21 13:32:24,471 [INFO] [96mREJECTION_SUMMARY | edge_floor=4 weak_execution_quality=4 bad_liquidity=1 cooldown_short=1 fresh_reentry_cooldown=1 low_edge=1 no_tradeable_side=1[0m
+2026-04-21 13:32:24,471 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0200 spread=0.050 volume=- edge=0.5687 mp=0.950 pressure=0.506 detail=side=yes[0m
+2026-04-21 13:32:24,471 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0826 spread=0.040 volume=- edge=-0.0746 mp=0.081 pressure=0.784[0m
+2026-04-21 13:32:24,471 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1291 spread=0.050 volume=- edge=-0.1211 mp=0.142 pressure=0.506[0m
+2026-04-21 13:32:24,471 [INFO] SKIPS | far_strike=99  no_liquidity=1  price=1  reentry_blk=2  edge_gate=5  entry_score=4
+2026-04-21 13:32:24,471 [INFO] CYCLE #33 done — 0 signal(s)
+2026-04-21 13:32:24,472 [INFO] [DASH_UPDATE] cycle=33 markets=13 signals=0 buys=0
+2026-04-21 13:32:24,472 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
+2026-04-21 13:32:35,027 [INFO] FINAL_SPOT | BTC=75588.035 ETH=2309.455
+2026-04-21 13:32:35,652 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:32:35,752 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:32:35,757 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:32:35,758 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:32:37,997 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:32:37,998 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:32:37,998 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:32:38,006 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=1
+2026-04-21 13:32:38,008 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1385
+2026-04-21 13:32:38,008 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1385 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:32:38,009 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=1
+2026-04-21 13:32:38,009 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:32:38,146 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0400 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:32:38,146 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2998 min_edge=0.0080[0m
+2026-04-21 13:32:38,146 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2998 mp=0.481 pressure=0.494 gap=0.3078 threshold=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2421 min_edge=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2421 mp=0.353 pressure=0.497 gap=0.2501 threshold=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1796 min_edge=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.050 volume=- edge=-0.1796 mp=0.241 pressure=0.512 gap=0.1876 threshold=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1279 min_edge=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1279 mp=0.151 pressure=0.513 gap=0.1359 threshold=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0966 min_edge=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.050 volume=- edge=-0.0966 mp=0.088 pressure=0.784 gap=0.1046 threshold=0.0080[0m
+2026-04-21 13:32:38,147 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3915 spread=0.0500 side=yes mp=0.611 entry=0.200[0m
+2026-04-21 13:32:38,147 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3915 adj_edge=0.3132 spread=0.0500 touch=2000
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.3132 mp=0.611 pressure=0.509 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:32:38,147 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5781 spread=0.0300 side=yes mp=0.730 entry=0.140[0m
+2026-04-21 13:32:38,147 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5781 adj_edge=0.4625 spread=0.0300 touch=2000
+2026-04-21 13:32:38,147 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.7265 spread=0.0300 side=yes mp=0.827 entry=0.090[0m
+2026-04-21 13:32:38,147 [INFO] [93m[ENTRY_BLOCK] ticker=KXBTC-26APR2117-B74875 reason=late_chase market_prob=0.827 pressure=0.753 spread=0.030[0m
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=late_chase spread=0.030 volume=- edge=0.7265 mp=0.827 pressure=0.753 detail=high_mp_high_pressure_yes[0m
+2026-04-21 13:32:38,147 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8225 spread=0.0400 side=yes mp=0.899 entry=0.060[0m
+2026-04-21 13:32:38,147 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8225 adj_edge=0.6580 spread=0.0400 touch=2216
+2026-04-21 13:32:38,147 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.040 entry_price=0.060 assigned=STARTER size_mult=0.50
+2026-04-21 13:32:38,147 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.946 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:32:38,147 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0728 spread=0.0400 side=no mp=0.491 entry=0.420[0m
+2026-04-21 13:32:38,147 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0728 adj_edge=0.0582 spread=0.0400 touch=2000
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0582 mp=0.491 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:32:38,147 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0966 spread=0.0400 side=no mp=0.050 entry=0.840[0m
+2026-04-21 13:32:38,147 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0966 adj_edge=0.0773 spread=0.0400 touch=2099
+2026-04-21 13:32:38,147 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0773 mp=0.050 pressure=0.505 detail=reason=weak_execution_quality touch=2099[0m
+2026-04-21 13:32:38,147 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7009 spread=0.0500 side=yes mp=0.950 entry=0.230[0m
+2026-04-21 13:32:38,147 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7009 adj_edge=0.5607 spread=0.0500 touch=2000
+2026-04-21 13:32:38,148 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5607 mp=0.950 pressure=0.514 gap=0.0300 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:32:38,148 [INFO] [96mCYCLE #34[0m
+2026-04-21 13:32:38,148 [INFO] [96mBANKROLL: $70.71 | OPEN: 1 | RISK: 2.7%[0m
+2026-04-21 13:32:38,148 [INFO] [96mTOP:[0m
+2026-04-21 13:32:38,148 [INFO] 1. KXBTC-26APR2117-B74625-YES e=0.66
+2026-04-21 13:32:38,148 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.46
+2026-04-21 13:32:38,148 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_normal pressure=0.497 spread=0.040 touch=2216[0m
+2026-04-21 13:32:38,148 [INFO] [KELLY_LITE] ticker=KXBTC-26APR2117-B74625 edge_strength=1.000 conviction_factor=0.900 book_factor=0.648 spread_drag=0.060 mult=0.756
+2026-04-21 13:32:38,148 [INFO] [ENTRY_GATE] ticker=KXBTC-26APR2117-B74625 regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216 allowed=False reason=no_side_control
+2026-04-21 13:32:38,148 [INFO] [93m[ENTRY_BLOCK] ticker=KXBTC-26APR2117-B74625 reason=no_side_control regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216[0m
+2026-04-21 13:32:38,148 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=final_no_side_control spread=0.040 volume=- edge=0.6580 mp=0.899 pressure=0.497 detail=regime=momentum_normal[0m
+2026-04-21 13:32:38,148 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown prev_edge=6.853 new_edge=0.463[0m
+2026-04-21 13:32:38,148 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown spread=0.030 volume=- edge=0.4625 mp=0.730 pressure=0.509 detail=prev_edge=6.853[0m
+2026-04-21 13:32:38,148 [INFO]   (no signals this cycle)
+2026-04-21 13:32:38,148 [INFO] [96mCAPITAL_SUMMARY | cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:32:38,148 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=1 buys=0 open=1
+2026-04-21 13:32:38,148 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=3
+2026-04-21 13:32:38,148 [INFO] [96mREJECTION_SUMMARY | edge_floor=5 weak_execution_quality=3 final_no_side_control=1 fresh_reentry_cooldown=1 late_chase=1 low_edge=1 no_tradeable_side=1[0m
+2026-04-21 13:32:38,148 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0300 spread=0.050 volume=- edge=0.5607 mp=0.950 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:32:38,148 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.1046 spread=0.050 volume=- edge=-0.0966 mp=0.088 pressure=0.784[0m
+2026-04-21 13:32:38,149 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1359 spread=0.040 volume=- edge=-0.1279 mp=0.151 pressure=0.513[0m
+2026-04-21 13:32:38,149 [INFO] SKIPS | far_strike=99  price=1  reentry_blk=1  edge_gate=6  entry_score=3
+2026-04-21 13:32:38,149 [INFO] CYCLE #34 done — 0 signal(s)
+2026-04-21 13:32:38,149 [INFO] [DASH_UPDATE] cycle=34 markets=13 signals=0 buys=0
+2026-04-21 13:32:38,149 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
+2026-04-21 13:32:48,490 [INFO] FINAL_SPOT | BTC=75562.415 ETH=2308.745
+2026-04-21 13:32:49,013 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:32:49,102 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:32:49,106 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:32:49,106 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:32:51,229 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:32:51,230 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:32:51,230 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:32:51,235 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=1
+2026-04-21 13:32:51,237 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1399
+2026-04-21 13:32:51,237 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1399 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:32:51,238 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=1
+2026-04-21 13:32:51,238 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:32:51,375 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0400 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:32:51,375 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2863 min_edge=0.0080[0m
+2026-04-21 13:32:51,375 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2863 mp=0.467 pressure=0.494 gap=0.2943 threshold=0.0080[0m
+2026-04-21 13:32:51,375 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2296 min_edge=0.0080[0m
+2026-04-21 13:32:51,375 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2296 mp=0.340 pressure=0.497 gap=0.2376 threshold=0.0080[0m
+2026-04-21 13:32:51,375 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1691 min_edge=0.0080[0m
+2026-04-21 13:32:51,375 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.050 volume=- edge=-0.1691 mp=0.230 pressure=0.512 gap=0.1771 threshold=0.0080[0m
+2026-04-21 13:32:51,375 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1199 min_edge=0.0080[0m
+2026-04-21 13:32:51,375 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1199 mp=0.143 pressure=0.513 gap=0.1279 threshold=0.0080[0m
+2026-04-21 13:32:51,375 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=low_edge spread=0.050 volume=- edge=-0.0029 mp=0.082 pressure=0.216 gap=0.0009 threshold=-0.0020 detail=eff_yes=-0.0029 eff_no=-0.0971[0m
+2026-04-21 13:32:51,375 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3786 spread=0.0500 side=yes mp=0.598 entry=0.200[0m
+2026-04-21 13:32:51,375 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3786 adj_edge=0.3029 spread=0.0500 touch=2000
+2026-04-21 13:32:51,376 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.3029 mp=0.598 pressure=0.509 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:32:51,376 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5828 spread=0.0200 side=yes mp=0.718 entry=0.130[0m
+2026-04-21 13:32:51,376 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.7179 spread=0.0300 side=yes mp=0.819 entry=0.090[0m
+2026-04-21 13:32:51,376 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74875 reason=no_tier spread=0.030 entry_price=0.090 assigned=STARTER size_mult=0.50
+2026-04-21 13:32:51,376 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8166 spread=0.0400 side=yes mp=0.893 entry=0.060[0m
+2026-04-21 13:32:51,376 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8166 adj_edge=0.6533 spread=0.0400 touch=2216
+2026-04-21 13:32:51,376 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.040 entry_price=0.060 assigned=STARTER size_mult=0.50
+2026-04-21 13:32:51,376 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:32:51,376 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.943 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:32:51,376 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0850 spread=0.0400 side=no mp=0.478 entry=0.420[0m
+2026-04-21 13:32:51,376 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0850 adj_edge=0.0680 spread=0.0400 touch=2000
+2026-04-21 13:32:51,376 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0680 mp=0.478 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:32:51,376 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0966 spread=0.0400 side=no mp=0.050 entry=0.840[0m
+2026-04-21 13:32:51,376 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0966 adj_edge=0.0773 spread=0.0400 touch=2099
+2026-04-21 13:32:51,376 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0773 mp=0.050 pressure=0.505 detail=reason=weak_execution_quality touch=2099[0m
+2026-04-21 13:32:51,376 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7009 spread=0.0500 side=yes mp=0.950 entry=0.230[0m
+2026-04-21 13:32:51,376 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7009 adj_edge=0.5607 spread=0.0500 touch=2000
+2026-04-21 13:32:51,376 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5607 mp=0.950 pressure=0.514 gap=0.0300 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:32:51,376 [INFO] [96mCYCLE #35[0m
+2026-04-21 13:32:51,376 [INFO] [96mBANKROLL: $70.71 | OPEN: 1 | RISK: 2.7%[0m
+2026-04-21 13:32:51,376 [INFO] [96mTOP:[0m
+2026-04-21 13:32:51,376 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.72
+2026-04-21 13:32:51,376 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.58
+2026-04-21 13:32:51,376 [INFO] 3. KXBTC-26APR2117-B74625-YES e=0.65
+2026-04-21 13:32:51,376 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=low_pressure regime=momentum_normal pressure=0.494 spread=0.030 touch=2000[0m
+2026-04-21 13:32:51,376 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reentry_blk spread=0.030 volume=- edge=0.7179 mp=0.819 pressure=0.494 detail=price_changed=1 edge_improved=0 structure_better=0[0m
+2026-04-21 13:32:51,377 [INFO] [95m[ELITE_ENTRY] forcing execution ticker=KXBTC-26APR2117-B75125[0m
+2026-04-21 13:32:51,377 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown prev_edge=6.853 new_edge=0.583[0m
+2026-04-21 13:32:51,377 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown spread=0.020 volume=- edge=0.5828 mp=0.718 pressure=0.509 detail=prev_edge=6.853[0m
+2026-04-21 13:32:51,377 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_normal pressure=0.497 spread=0.040 touch=2216[0m
+2026-04-21 13:32:51,377 [INFO] [KELLY_LITE] ticker=KXBTC-26APR2117-B74625 edge_strength=1.000 conviction_factor=0.900 book_factor=0.648 spread_drag=0.060 mult=0.756
+2026-04-21 13:32:51,377 [INFO] [ENTRY_GATE] ticker=KXBTC-26APR2117-B74625 regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216 allowed=False reason=no_side_control
+2026-04-21 13:32:51,377 [INFO] [93m[ENTRY_BLOCK] ticker=KXBTC-26APR2117-B74625 reason=no_side_control regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216[0m
+2026-04-21 13:32:51,377 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=final_no_side_control spread=0.040 volume=- edge=0.6533 mp=0.893 pressure=0.497 detail=regime=momentum_normal[0m
+2026-04-21 13:32:51,377 [INFO]   (no signals this cycle)
+2026-04-21 13:32:51,377 [INFO] [96mCAPITAL_SUMMARY | cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:32:51,377 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=3 attempts=1 buys=0 open=1
+2026-04-21 13:32:51,377 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=3
+2026-04-21 13:32:51,377 [INFO] [96mREJECTION_SUMMARY | edge_floor=4 weak_execution_quality=3 low_edge=2 final_no_side_control=1 fresh_reentry_cooldown=1 no_tradeable_side=1 reentry_blk=1[0m
+2026-04-21 13:32:51,377 [INFO] [96mNEAR_PASS_1 | ticker=KXBTC-26APR2117-B76625 reason=low_edge gap=0.0009 spread=0.050 volume=- edge=-0.0029 mp=0.082 pressure=0.216 detail=eff_yes=-0.0029 eff_no=-0.0971[0m
+2026-04-21 13:32:51,377 [INFO] [96mNEAR_PASS_2 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0300 spread=0.050 volume=- edge=0.5607 mp=0.950 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:32:51,377 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1279 spread=0.040 volume=- edge=-0.1199 mp=0.143 pressure=0.513[0m
+2026-04-21 13:32:51,377 [INFO] SKIPS | far_strike=99  price=1  reentry_blk=2  edge_gate=6  entry_score=3
+2026-04-21 13:32:51,377 [INFO] CYCLE #35 done — 0 signal(s)
+2026-04-21 13:32:51,378 [INFO] [DASH_UPDATE] cycle=35 markets=13 signals=0 buys=0
+2026-04-21 13:32:51,378 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
+2026-04-21 13:33:01,677 [INFO] FINAL_SPOT | BTC=75574.145 ETH=2308.835
+2026-04-21 13:33:02,171 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:33:02,266 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:33:02,270 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:33:02,270 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:33:04,540 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:33:04,541 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:33:04,541 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:33:04,549 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=1
+2026-04-21 13:33:04,551 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1412
+2026-04-21 13:33:04,551 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1412 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:33:04,552 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=1
+2026-04-21 13:33:04,552 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:33:04,687 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0400 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:33:04,687 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2925 min_edge=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2925 mp=0.473 pressure=0.494 gap=0.3005 threshold=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2351 min_edge=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2351 mp=0.346 pressure=0.497 gap=0.2431 threshold=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1736 min_edge=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.050 volume=- edge=-0.1736 mp=0.235 pressure=0.512 gap=0.1816 threshold=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1233 min_edge=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1233 mp=0.147 pressure=0.513 gap=0.1313 threshold=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0934 min_edge=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.050 volume=- edge=-0.0934 mp=0.084 pressure=0.784 gap=0.1014 threshold=0.0080[0m
+2026-04-21 13:33:04,687 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3904 spread=0.0400 side=yes mp=0.604 entry=0.200[0m
+2026-04-21 13:33:04,687 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3904 adj_edge=0.3123 spread=0.0400 touch=2000
+2026-04-21 13:33:04,687 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.040 volume=- edge=0.3123 mp=0.604 pressure=0.502 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:33:04,687 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5505 spread=0.0400 side=yes mp=0.724 entry=0.160[0m
+2026-04-21 13:33:04,687 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5505 adj_edge=0.4404 spread=0.0400 touch=2000
+2026-04-21 13:33:04,687 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.040 volume=- edge=0.4404 mp=0.724 pressure=0.509 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:33:04,688 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.7222 spread=0.0300 side=yes mp=0.823 entry=0.090[0m
+2026-04-21 13:33:04,688 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74875 reason=no_tier spread=0.030 entry_price=0.090 assigned=STARTER size_mult=0.50
+2026-04-21 13:33:04,688 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8195 spread=0.0400 side=yes mp=0.896 entry=0.060[0m
+2026-04-21 13:33:04,688 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8195 adj_edge=0.6556 spread=0.0400 touch=2216
+2026-04-21 13:33:04,688 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.040 entry_price=0.060 assigned=STARTER size_mult=0.50
+2026-04-21 13:33:04,688 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:33:04,688 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.945 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:33:04,688 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0835 spread=0.0400 side=no mp=0.480 entry=0.420[0m
+2026-04-21 13:33:04,688 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0835 adj_edge=0.0668 spread=0.0400 touch=2000
+2026-04-21 13:33:04,688 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0668 mp=0.480 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:33:04,688 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0966 spread=0.0400 side=no mp=0.050 entry=0.840[0m
+2026-04-21 13:33:04,688 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0966 adj_edge=0.0773 spread=0.0400 touch=2099
+2026-04-21 13:33:04,688 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0773 mp=0.050 pressure=0.505 detail=reason=weak_execution_quality touch=2099[0m
+2026-04-21 13:33:04,688 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7009 spread=0.0500 side=yes mp=0.950 entry=0.230[0m
+2026-04-21 13:33:04,688 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7009 adj_edge=0.5607 spread=0.0500 touch=2000
+2026-04-21 13:33:04,688 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5607 mp=0.950 pressure=0.514 gap=0.0300 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:33:04,688 [INFO] [96mCYCLE #36[0m
+2026-04-21 13:33:04,688 [INFO] [96mBANKROLL: $70.71 | OPEN: 1 | RISK: 2.7%[0m
+2026-04-21 13:33:04,688 [INFO] [96mTOP:[0m
+2026-04-21 13:33:04,688 [INFO] 1. KXBTC-26APR2117-B74875-YES e=0.72
+2026-04-21 13:33:04,688 [INFO] 2. KXBTC-26APR2117-B74625-YES e=0.66
+2026-04-21 13:33:04,688 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74875 reason=low_pressure regime=momentum_normal pressure=0.494 spread=0.030 touch=2000[0m
+2026-04-21 13:33:04,688 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=reentry_blk spread=0.030 volume=- edge=0.7222 mp=0.823 pressure=0.494 detail=price_changed=1 edge_improved=0 structure_better=0[0m
+2026-04-21 13:33:04,688 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_normal pressure=0.497 spread=0.040 touch=2216[0m
+2026-04-21 13:33:04,688 [INFO] [KELLY_LITE] ticker=KXBTC-26APR2117-B74625 edge_strength=1.000 conviction_factor=0.900 book_factor=0.648 spread_drag=0.060 mult=0.756
+2026-04-21 13:33:04,688 [INFO] [ENTRY_GATE] ticker=KXBTC-26APR2117-B74625 regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216 allowed=False reason=no_side_control
+2026-04-21 13:33:04,689 [INFO] [93m[ENTRY_BLOCK] ticker=KXBTC-26APR2117-B74625 reason=no_side_control regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216[0m
+2026-04-21 13:33:04,689 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=final_no_side_control spread=0.040 volume=- edge=0.6556 mp=0.896 pressure=0.497 detail=regime=momentum_normal[0m
+2026-04-21 13:33:04,689 [INFO]   (no signals this cycle)
+2026-04-21 13:33:04,689 [INFO] [96mCAPITAL_SUMMARY | cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:33:04,689 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=1 buys=0 open=1
+2026-04-21 13:33:04,689 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=4
+2026-04-21 13:33:04,689 [INFO] [96mREJECTION_SUMMARY | edge_floor=5 weak_execution_quality=4 final_no_side_control=1 low_edge=1 no_tradeable_side=1 reentry_blk=1[0m
+2026-04-21 13:33:04,689 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0300 spread=0.050 volume=- edge=0.5607 mp=0.950 pressure=0.514 detail=side=yes[0m
+2026-04-21 13:33:04,689 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.1014 spread=0.050 volume=- edge=-0.0934 mp=0.084 pressure=0.784[0m
+2026-04-21 13:33:04,689 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1313 spread=0.040 volume=- edge=-0.1233 mp=0.147 pressure=0.513[0m
+2026-04-21 13:33:04,689 [INFO] SKIPS | far_strike=99  price=1  reentry_blk=1  edge_gate=6  entry_score=4
+2026-04-21 13:33:04,689 [INFO] CYCLE #36 done — 0 signal(s)
+2026-04-21 13:33:04,689 [INFO] [DASH_UPDATE] cycle=36 markets=13 signals=0 buys=0
+2026-04-21 13:33:04,690 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
+2026-04-21 13:33:15,110 [INFO] FINAL_SPOT | BTC=75580.155 ETH=2309.02
+2026-04-21 13:33:15,599 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:33:15,707 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:33:15,709 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:33:15,709 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:33:17,920 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:33:17,922 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:33:17,922 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:33:17,930 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=1
+2026-04-21 13:33:17,932 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1425
+2026-04-21 13:33:17,933 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1425 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:33:17,933 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=1
+2026-04-21 13:33:17,933 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:33:18,075 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0400 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:33:18,075 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2956 min_edge=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2956 mp=0.476 pressure=0.494 gap=0.3036 threshold=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2222 min_edge=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.040 volume=- edge=-0.2222 mp=0.349 pressure=0.497 gap=0.2302 threshold=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1601 min_edge=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.040 volume=- edge=-0.1601 mp=0.237 pressure=0.503 gap=0.1681 threshold=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1249 min_edge=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1249 mp=0.148 pressure=0.506 gap=0.1329 threshold=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0787 min_edge=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.040 volume=- edge=-0.0787 mp=0.085 pressure=0.784 gap=0.0867 threshold=0.0080[0m
+2026-04-21 13:33:18,075 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3876 spread=0.0500 side=yes mp=0.607 entry=0.200[0m
+2026-04-21 13:33:18,075 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3876 adj_edge=0.3101 spread=0.0500 touch=2175
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.3101 mp=0.607 pressure=0.508 detail=reason=elevated_spread_exec touch=2175[0m
+2026-04-21 13:33:18,075 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5475 spread=0.0500 side=yes mp=0.727 entry=0.160[0m
+2026-04-21 13:33:18,075 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5475 adj_edge=0.4380 spread=0.0500 touch=2000
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=weak_execution_quality spread=0.050 volume=- edge=0.4380 mp=0.727 pressure=0.509 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:33:18,075 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.7086 spread=0.0400 side=yes mp=0.825 entry=0.100[0m
+2026-04-21 13:33:18,075 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74875 raw_edge=0.7086 adj_edge=0.5669 spread=0.0400 touch=2000
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=weak_execution_quality spread=0.040 volume=- edge=0.5669 mp=0.825 pressure=0.494 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:33:18,075 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8211 spread=0.0400 side=yes mp=0.898 entry=0.060[0m
+2026-04-21 13:33:18,075 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8211 adj_edge=0.6569 spread=0.0400 touch=2216
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6569 mp=0.898 pressure=0.235 detail=reason=weak_execution_quality touch=2216[0m
+2026-04-21 13:33:18,075 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:33:18,075 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.946 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:33:18,075 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0803 spread=0.0400 side=no mp=0.483 entry=0.420[0m
+2026-04-21 13:33:18,076 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0803 adj_edge=0.0642 spread=0.0400 touch=2000
+2026-04-21 13:33:18,076 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0642 mp=0.483 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:33:18,076 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.1088 spread=0.0300 side=no mp=0.050 entry=0.830[0m
+2026-04-21 13:33:18,076 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=no_tradeable_side spread=0.030 volume=- edge=0.1088 mp=0.050 pressure=0.505 gap=0.2300 threshold=0.6000 detail=side=no[0m
+2026-04-21 13:33:18,076 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7209 spread=0.0500 side=yes mp=0.950 entry=0.210[0m
+2026-04-21 13:33:18,076 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7209 adj_edge=0.5767 spread=0.0500 touch=2000
+2026-04-21 13:33:18,076 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5767 mp=0.950 pressure=0.506 gap=0.0100 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:33:18,076 [INFO] [96mCYCLE #37[0m
+2026-04-21 13:33:18,076 [INFO] [96mBANKROLL: $70.71 | OPEN: 1 | RISK: 2.7%[0m
+2026-04-21 13:33:18,076 [INFO]   (no signals this cycle)
+2026-04-21 13:33:18,076 [INFO] [96mCAPITAL_SUMMARY | cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:33:18,076 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=0 attempts=0 buys=0 open=1
+2026-04-21 13:33:18,076 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=5
+2026-04-21 13:33:18,076 [INFO] [96mREJECTION_SUMMARY | edge_floor=5 weak_execution_quality=5 no_tradeable_side=2 low_edge=1[0m
+2026-04-21 13:33:18,076 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0100 spread=0.050 volume=- edge=0.5767 mp=0.950 pressure=0.506 detail=side=yes[0m
+2026-04-21 13:33:18,076 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0867 spread=0.040 volume=- edge=-0.0787 mp=0.085 pressure=0.784[0m
+2026-04-21 13:33:18,076 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1329 spread=0.040 volume=- edge=-0.1249 mp=0.148 pressure=0.506[0m
+2026-04-21 13:33:18,076 [INFO] SKIPS | far_strike=99  price=2  edge_gate=6  entry_score=5
+2026-04-21 13:33:18,076 [INFO] CYCLE #37 done — 0 signal(s)
+2026-04-21 13:33:18,077 [INFO] [DASH_UPDATE] cycle=37 markets=13 signals=0 buys=0
+2026-04-21 13:33:18,077 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
+2026-04-21 13:33:28,453 [INFO] FINAL_SPOT | BTC=75574.615 ETH=2309.565
+2026-04-21 13:33:28,947 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:33:29,195 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:33:29,199 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:33:29,199 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:33:32,433 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:33:32,434 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:33:32,434 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:33:32,440 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=1
+2026-04-21 13:33:32,441 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1440
+2026-04-21 13:33:32,441 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1440 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:33:32,441 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=1
+2026-04-21 13:33:32,442 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:33:32,571 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0300 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:33:32,571 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2927 min_edge=0.0080[0m
+2026-04-21 13:33:32,571 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2927 mp=0.473 pressure=0.494 gap=0.3007 threshold=0.0080[0m
+2026-04-21 13:33:32,571 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2193 min_edge=0.0080[0m
+2026-04-21 13:33:32,571 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.040 volume=- edge=-0.2193 mp=0.346 pressure=0.497 gap=0.2273 threshold=0.0080[0m
+2026-04-21 13:33:32,571 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1735 min_edge=0.0080[0m
+2026-04-21 13:33:32,571 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.050 volume=- edge=-0.1735 mp=0.234 pressure=0.501 gap=0.1815 threshold=0.0080[0m
+2026-04-21 13:33:32,571 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1230 min_edge=0.0080[0m
+2026-04-21 13:33:32,571 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1230 mp=0.146 pressure=0.506 gap=0.1310 threshold=0.0080[0m
+2026-04-21 13:33:32,572 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0774 min_edge=0.0080[0m
+2026-04-21 13:33:32,572 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.040 volume=- edge=-0.0774 mp=0.084 pressure=0.784 gap=0.0854 threshold=0.0080[0m
+2026-04-21 13:33:32,572 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3848 spread=0.0500 side=yes mp=0.604 entry=0.200[0m
+2026-04-21 13:33:32,572 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3848 adj_edge=0.3078 spread=0.0500 touch=2175
+2026-04-21 13:33:32,572 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.3078 mp=0.604 pressure=0.508 detail=reason=elevated_spread_exec touch=2175[0m
+2026-04-21 13:33:32,572 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5886 spread=0.0200 side=yes mp=0.724 entry=0.130[0m
+2026-04-21 13:33:32,572 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.7069 spread=0.0400 side=yes mp=0.823 entry=0.100[0m
+2026-04-21 13:33:32,572 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74875 raw_edge=0.7069 adj_edge=0.5655 spread=0.0400 touch=2000
+2026-04-21 13:33:32,572 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=weak_execution_quality spread=0.040 volume=- edge=0.5655 mp=0.823 pressure=0.494 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:33:32,572 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8200 spread=0.0400 side=yes mp=0.897 entry=0.060[0m
+2026-04-21 13:33:32,572 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8200 adj_edge=0.6560 spread=0.0400 touch=2216
+2026-04-21 13:33:32,572 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=weak_execution_quality spread=0.040 volume=- edge=0.6560 mp=0.897 pressure=0.235 detail=reason=weak_execution_quality touch=2216[0m
+2026-04-21 13:33:32,572 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:33:32,572 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.945 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:33:32,572 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.1018 spread=0.0200 side=no mp=0.492 entry=0.400[0m
+2026-04-21 13:33:32,572 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=killer_killer_score spread=0.020 volume=- edge=0.1018 mp=0.492 pressure=0.489 gap=0.0611 threshold=0.5400[0m
+2026-04-21 13:33:32,572 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.1088 spread=0.0300 side=no mp=0.050 entry=0.830[0m
+2026-04-21 13:33:32,572 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=no_tradeable_side spread=0.030 volume=- edge=0.1088 mp=0.050 pressure=0.505 gap=0.2300 threshold=0.6000 detail=side=no[0m
+2026-04-21 13:33:32,572 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7109 spread=0.0500 side=yes mp=0.950 entry=0.220[0m
+2026-04-21 13:33:32,572 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7109 adj_edge=0.5687 spread=0.0500 touch=2000
+2026-04-21 13:33:32,572 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5687 mp=0.950 pressure=0.506 gap=0.0200 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:33:32,572 [INFO] [96mCYCLE #38[0m
+2026-04-21 13:33:32,572 [INFO] [96mBANKROLL: $70.71 | OPEN: 1 | RISK: 2.7%[0m
+2026-04-21 13:33:32,572 [INFO] [96mTOP:[0m
+2026-04-21 13:33:32,572 [INFO] 1. KXBTC-26APR2117-B75125-YES e=0.59
+2026-04-21 13:33:32,572 [INFO] [95m[ELITE_ENTRY] forcing execution ticker=KXBTC-26APR2117-B75125[0m
+2026-04-21 13:33:32,573 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown prev_edge=6.853 new_edge=0.589[0m
+2026-04-21 13:33:32,573 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=fresh_reentry_cooldown spread=0.020 volume=- edge=0.5886 mp=0.724 pressure=0.509 detail=prev_edge=6.853[0m
+2026-04-21 13:33:32,573 [INFO]   (no signals this cycle)
+2026-04-21 13:33:32,573 [INFO] [96mCAPITAL_SUMMARY | cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:33:32,573 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=1 attempts=0 buys=0 open=1
+2026-04-21 13:33:32,573 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=4
+2026-04-21 13:33:32,573 [INFO] [96mREJECTION_SUMMARY | edge_floor=5 weak_execution_quality=3 no_tradeable_side=2 fresh_reentry_cooldown=1 killer_killer_score=1 low_edge=1[0m
+2026-04-21 13:33:32,573 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0200 spread=0.050 volume=- edge=0.5687 mp=0.950 pressure=0.506 detail=side=yes[0m
+2026-04-21 13:33:32,573 [INFO] [96mNEAR_PASS_2 | ticker=KXETH-26APR2117-B2310 reason=killer_killer_score gap=0.0611 spread=0.020 volume=- edge=0.1018 mp=0.492 pressure=0.489[0m
+2026-04-21 13:33:32,573 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.0854 spread=0.040 volume=- edge=-0.0774 mp=0.084 pressure=0.784[0m
+2026-04-21 13:33:32,573 [INFO] SKIPS | far_strike=99  price=2  reentry_blk=1  edge_gate=6  entry_score=4
+2026-04-21 13:33:32,573 [INFO] CYCLE #38 done — 0 signal(s)
+2026-04-21 13:33:32,573 [INFO] [DASH_UPDATE] cycle=38 markets=13 signals=0 buys=0
+2026-04-21 13:33:32,574 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
+2026-04-21 13:33:43,130 [INFO] FINAL_SPOT | BTC=75588.135 ETH=2309.565
+2026-04-21 13:33:43,817 [INFO] [DISCOVERY] series=KXBTC count=318 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:33:43,905 [INFO] [DISCOVERY] series=KXETH count=165 earliest_close=2026-04-21T19:00:00Z latest_close=2026-04-24T21:00:00Z
+2026-04-21 13:33:43,908 [INFO] PREFILTER SUMMARY | kept=13 rejects={not_fam: 0, too_soon: 263, too_far: 100, far_strike: 99, unparsed: 0, no_spot: 0}
+2026-04-21 13:33:43,908 [INFO] Candidates: 13 tickers (99 far_strike, 0 unparsed, 0 no_spot).
+2026-04-21 13:33:46,125 [INFO] Orderbooks: 13 single request(s) for 13 tickers, got prices for 13 (rate_limited=0).
+2026-04-21 13:33:46,126 [INFO] TRADEABLE MARKETS: 13
+2026-04-21 13:33:46,126 [INFO] RATE_LIMIT_SOURCE | discovery=False orderbooks=False ob_requests=13 ob_prices=13
+2026-04-21 13:33:46,131 [INFO] [EXIT CLEANUP] expiry_cleanup | remaining_open=1
+2026-04-21 13:33:46,132 [INFO] [HELD DECAY] ticker=KXETH-26APR2115-B2280 killer=0.415 fake_edge=True reinforce_eligible=False pnl=0.0000 held=1454
+2026-04-21 13:33:46,132 [INFO] [EARLY_LOSS_DEFER] ticker=KXETH-26APR2115-B2280 held=1454 min_hold=25 pnl=0.0000 reason=stale_conviction
+2026-04-21 13:33:46,132 [INFO] [EXIT CLEANUP] active_exit_cleanup | remaining_open=1
+2026-04-21 13:33:46,132 [INFO] EXIT_SUMMARY | deferred=0 tp=0 pressure=0 momentum=0 hard_stop=0 trail=0 time=0 broken=0 stale_conv=0 stale_break=0 conviction_decay=0
+2026-04-21 13:33:46,258 [INFO] [96mREGIME | median_spread=0.0400 p25=0.0400 p75=0.0500 real_book=13 touch50=13 touch10=13 spread<=0.05=12 spread<=0.08=12 bad_regime=False[0m
+2026-04-21 13:33:46,258 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75625 reason=edge_floor final_edge=-0.2998 min_edge=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75625 reason=edge_floor spread=0.030 volume=- edge=-0.2998 mp=0.481 pressure=0.494 gap=0.3078 threshold=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B75875 reason=edge_floor final_edge=-0.2416 min_edge=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75875 reason=edge_floor spread=0.050 volume=- edge=-0.2416 mp=0.353 pressure=0.497 gap=0.2496 threshold=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76125 reason=edge_floor final_edge=-0.1788 min_edge=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76125 reason=edge_floor spread=0.050 volume=- edge=-0.1788 mp=0.240 pressure=0.509 gap=0.1868 threshold=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76375 reason=edge_floor final_edge=-0.1270 min_edge=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76375 reason=edge_floor spread=0.040 volume=- edge=-0.1270 mp=0.150 pressure=0.506 gap=0.1350 threshold=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[BLOCKED] ticker=KXBTC-26APR2117-B76625 reason=edge_floor final_edge=-0.0958 min_edge=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B76625 reason=edge_floor spread=0.050 volume=- edge=-0.0958 mp=0.087 pressure=0.784 gap=0.1038 threshold=0.0080[0m
+2026-04-21 13:33:46,258 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75375 edge=0.3920 spread=0.0500 side=yes mp=0.611 entry=0.200[0m
+2026-04-21 13:33:46,258 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75375 raw_edge=0.3920 adj_edge=0.3136 spread=0.0500 touch=2000
+2026-04-21 13:33:46,258 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75375 reason=weak_execution_quality spread=0.050 volume=- edge=0.3136 mp=0.611 pressure=0.508 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:33:46,258 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B75125 edge=0.5789 spread=0.0300 side=yes mp=0.730 entry=0.140[0m
+2026-04-21 13:33:46,258 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B75125 raw_edge=0.5789 adj_edge=0.4631 spread=0.0300 touch=2000
+2026-04-21 13:33:46,258 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74875 edge=0.7117 spread=0.0400 side=yes mp=0.828 entry=0.100[0m
+2026-04-21 13:33:46,258 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74875 raw_edge=0.7117 adj_edge=0.5694 spread=0.0400 touch=2000
+2026-04-21 13:33:46,258 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74875 reason=weak_execution_quality spread=0.040 volume=- edge=0.5694 mp=0.828 pressure=0.494 detail=reason=elevated_spread_exec touch=2000[0m
+2026-04-21 13:33:46,258 [INFO] [92m[EDGE PASS] ticker=KXBTC-26APR2117-B74625 edge=0.8234 spread=0.0400 side=yes mp=0.900 entry=0.060[0m
+2026-04-21 13:33:46,259 [INFO] [EDGE_ADJUST] ticker=KXBTC-26APR2117-B74625 raw_edge=0.8234 adj_edge=0.6587 spread=0.0400 touch=2216
+2026-04-21 13:33:46,259 [INFO] [TIER_FALLBACK] ticker=KXBTC-26APR2117-B74625 reason=no_tier spread=0.040 entry_price=0.060 assigned=STARTER size_mult=0.50
+2026-04-21 13:33:46,259 [INFO] [93m[SIDE_INVALID] ticker=KXBTC-26APR2117-B74375 side=no reason=no_executable_ask[0m
+2026-04-21 13:33:46,259 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74375 reason=low_edge spread=0.000 volume=- edge=- mp=0.947 pressure=0.000 threshold=-0.0020 detail=eff_yes=na eff_no=na[0m
+2026-04-21 13:33:46,259 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2310 edge=0.0709 spread=0.0400 side=no mp=0.492 entry=0.420[0m
+2026-04-21 13:33:46,259 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2310 raw_edge=0.0709 adj_edge=0.0567 spread=0.0400 touch=2000
+2026-04-21 13:33:46,259 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2310 reason=weak_execution_quality spread=0.040 volume=- edge=0.0567 mp=0.492 pressure=0.490 detail=reason=weak_execution_quality touch=2000[0m
+2026-04-21 13:33:46,259 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2350 edge=0.0930 spread=0.0400 side=no mp=0.050 entry=0.840[0m
+2026-04-21 13:33:46,259 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2350 raw_edge=0.0930 adj_edge=0.0744 spread=0.0400 touch=99
+2026-04-21 13:33:46,259 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2350 reason=weak_execution_quality spread=0.040 volume=- edge=0.0744 mp=0.050 pressure=0.505 detail=reason=weak_execution_quality touch=99[0m
+2026-04-21 13:33:46,259 [INFO] [92m[EDGE PASS] ticker=KXETH-26APR2117-B2270 edge=0.7109 spread=0.0500 side=yes mp=0.950 entry=0.220[0m
+2026-04-21 13:33:46,259 [INFO] [EDGE_ADJUST] ticker=KXETH-26APR2117-B2270 raw_edge=0.7109 adj_edge=0.5687 spread=0.0500 touch=2000
+2026-04-21 13:33:46,259 [INFO] [93m[REJECT_DETAIL] ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side spread=0.050 volume=- edge=0.5687 mp=0.950 pressure=0.506 gap=0.0200 threshold=0.2000 detail=side=yes[0m
+2026-04-21 13:33:46,259 [INFO] [96mCYCLE #39[0m
+2026-04-21 13:33:46,259 [INFO] [96mBANKROLL: $70.71 | OPEN: 1 | RISK: 2.7%[0m
+2026-04-21 13:33:46,259 [INFO] [96mTOP:[0m
+2026-04-21 13:33:46,259 [INFO] 1. KXBTC-26APR2117-B74625-YES e=0.66
+2026-04-21 13:33:46,259 [INFO] 2. KXBTC-26APR2117-B75125-YES e=0.46
+2026-04-21 13:33:46,259 [INFO] [93m[ELITE_ENTRY_BLOCKED] ticker=KXBTC-26APR2117-B74625 reason=low_pressure regime=momentum_normal pressure=0.497 spread=0.040 touch=2216[0m
+2026-04-21 13:33:46,259 [INFO] [KELLY_LITE] ticker=KXBTC-26APR2117-B74625 edge_strength=1.000 conviction_factor=1.000 book_factor=0.648 spread_drag=0.060 mult=0.808
+2026-04-21 13:33:46,259 [INFO] [ENTRY_GATE] ticker=KXBTC-26APR2117-B74625 regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216 allowed=False reason=no_side_control
+2026-04-21 13:33:46,259 [INFO] [93m[ENTRY_BLOCK] ticker=KXBTC-26APR2117-B74625 reason=no_side_control regime=momentum_normal pressure=0.497 spread=0.039999999999999994 touch=2216[0m
+2026-04-21 13:33:46,259 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B74625 reason=final_no_side_control spread=0.040 volume=- edge=0.6587 mp=0.900 pressure=0.497 detail=regime=momentum_normal[0m
+2026-04-21 13:33:46,259 [INFO] [KELLY_LITE] ticker=KXBTC-26APR2117-B75125 edge_strength=1.000 conviction_factor=0.900 book_factor=0.684 spread_drag=0.045 mult=0.797
+2026-04-21 13:33:46,259 [INFO] [93m[REJECT_DETAIL] ticker=KXBTC-26APR2117-B75125 reason=exceeds_2pct_risk spread=0.030 volume=- edge=0.4631 mp=0.730 pressure=0.509[0m
+2026-04-21 13:33:46,259 [INFO]   (no signals this cycle)
+2026-04-21 13:33:46,260 [INFO] [96mCAPITAL_SUMMARY | cash_balance=68.31 open_exposure=2.40 realized_cash_pnl=red$-19.29[0m bought_this_cycle=0 exited_this_cycle=0 rotated_this_cycle=0[0m
+2026-04-21 13:33:46,260 [INFO] SCAN SUMMARY | fetched=13 usable=13 actionable=2 attempts=1 buys=0 open=1
+2026-04-21 13:33:46,260 [INFO] BLOCK_SUMMARY | pressure=0 spread=0 liquidity=0 score=4
+2026-04-21 13:33:46,260 [INFO] [96mREJECTION_SUMMARY | edge_floor=5 weak_execution_quality=4 exceeds_2pct_risk=1 final_no_side_control=1 low_edge=1 no_tradeable_side=1[0m
+2026-04-21 13:33:46,260 [INFO] [96mNEAR_PASS_1 | ticker=KXETH-26APR2117-B2270 reason=no_tradeable_side gap=0.0200 spread=0.050 volume=- edge=0.5687 mp=0.950 pressure=0.506 detail=side=yes[0m
+2026-04-21 13:33:46,260 [INFO] [96mNEAR_PASS_2 | ticker=KXBTC-26APR2117-B76625 reason=edge_floor gap=0.1038 spread=0.050 volume=- edge=-0.0958 mp=0.087 pressure=0.784[0m
+2026-04-21 13:33:46,260 [INFO] [96mNEAR_PASS_3 | ticker=KXBTC-26APR2117-B76375 reason=edge_floor gap=0.1350 spread=0.040 volume=- edge=-0.1270 mp=0.150 pressure=0.506[0m
+2026-04-21 13:33:46,260 [INFO] SKIPS | far_strike=99  price=1  edge_gate=6  entry_score=4
+2026-04-21 13:33:46,260 [INFO] CYCLE #39 done — 0 signal(s)
+2026-04-21 13:33:46,260 [INFO] [DASH_UPDATE] cycle=39 markets=13 signals=0 buys=0
+2026-04-21 13:33:46,261 [INFO] [STATE_SAVE] realized_cash_pnl=-19.29 last_exit_meta=67 reinforce_count=5
